@@ -1,0 +1,62 @@
+/*引入有赞UI  */
+@import "/assets/plugin/zanui/index.wxss";
+@import "/assets/css/color.wxss";
+@import "/assets/css/ymeui-simple.wxss";
+
+/**app.wxss**/
+
+.panel {
+  background-color: #fff;
+}
+
+.popup-example--bottom .zan-popup__container {
+  left: 0;
+  right: 0;
+}
+
+/* .banner-card */s
+
+.banner-card .item-content {
+  width: 60%;
+  padding: 32rpx 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner-card .item-content image {
+  height: 35vw;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 6rpx rgba(0, 0, 0, 0.12),
+                0 2rpx 4rpx rgba(0, 0, 0, 0.24),
+                0 2rpx 16rpx rgba(0, 0, 0, 0.05);
+}
+
+.banner-card .item-content image+.item-title {
+  padding-top: 16rpx;
+}
+
+/* footer */
+
+.footer {
+  background-color: #fff;
+  min-height: 45px;
+}
+
+.footer+.container {
+  padding-bottom: 96rpx;
+}
+
+/* section */
+
+.section {
+  margin: 32rpx 0;
+}
+
+.section-title {
+  border-left: 4px solid #d00;
+  padding-left: 32rpx;
+}
+
+.zan-cell__hd {
+  padding-right: 16rpx;
+}

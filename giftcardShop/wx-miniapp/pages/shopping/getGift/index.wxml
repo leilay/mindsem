@@ -1,0 +1,21 @@
+<!--pages/shopping/getGift/index.wxml-->
+<view class='container'>
+
+  <view class='card card-flush'>
+    <!-- banner-card -->
+    <view class='banner-card'>
+
+      <view class='item-content'>
+        <view class='item-title'>曾源</view>
+        <view class='display-3'>送您一份礼物</view>
+        <image mode='aspectFill' src='{{ cover }}'></image>
+      </view>
+
+      <view class='content-block'>
+        <button class='zan-btn zan-btn--primary'>立即领取</button>
+      </view>
+
+    </view>
+  </view>
+
+</view>

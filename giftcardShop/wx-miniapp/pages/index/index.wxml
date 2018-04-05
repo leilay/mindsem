@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="container bg-white">
+
+  <!--banner-index  -->
+  <view class='banner-index'>
+    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <navigator class='' url='{{item.url}}'>
+            <image mode='widthFix' src="{{item.img}}" />
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='section'>
+    <!-- cardList -->
+    <block wx:for="{{cardList}}">
+
+      <view class='section-title'>
+        <view class='section-content'>
+          <view class='title'>{{item.categorieTitle}}</view>
+          <view class='caption'>{{item.categorieDesc}}</view>
+        </view>
+      </view>
+
+      <view class='card-list'>
+        <block wx:for="{{item.items}}" wx:for-item="i">
+          <view class='item'>
+            <navigator url='/pages/shopping/cardPage/index' class='item-content'>
+              <view class='item-media'>
+                <image mode='aspectFill' src='{{i.img}}'></image>
+              </view>
+              <view class='item-title'>
+                {{i.title}}
+              </view>
+            </navigator>
+          </view>
+        </block>
+      </view>
+
+    </block>
+
+  </view>
+
+  <!-- flow -->
+  <image mode='widthFix' src='/assets/img/ui/flow.png'></image>
+
+</view>
+
+<navigator url='/pages/my/myGiftOrderList/index' class='button-bottom'>
+  <text class="zan-icon zan-icon-clock"></text> 查看购买记录</navigator>

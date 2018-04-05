@@ -1,0 +1,154 @@
+/* pages/shopping/cardPage/index.wxss */
+
+.container {
+  margin-bottom: 96rpx;
+}
+
+/* item-content */
+
+.item-content {
+  display: flex;
+  align-items: center;
+}
+
+.item-content .item-inner {
+  flex: 1;
+}
+
+.item-content>.item-title {
+  flex: 1;
+}
+
+/* ========== selector-gift ========== */
+
+.selector-gift {
+  padding: 24rpx 0;
+}
+
+.selector-gift .item-content {
+  background-color: #f1f2f6;
+  border-radius: 8rpx;
+  padding: 24rpx;
+  margin: 24rpx;
+  color: #333;
+}
+
+.selector-gift .item-content .item-text {
+  font-weight: bold;
+}
+
+.selector-gift .zan-stepper__minus, .selector-gift .zan-stepper__plus {
+  border-radius: 50%;
+  padding: 0;
+  min-width: auto;
+}
+
+.selector-gift .zan-stepper--small .zan-stepper__minus,
+.selector-gift .zan-stepper--small .zan-stepper__plus {
+  width: 48rpx;
+  height: 48rpx;
+  border: 3rpx solid #d00;
+  font-size: 48rpx;
+}
+
+.selector-gift .zan-stepper--small .zan-stepper__minus {
+  line-height: 36rpx;
+  color: #d00;
+}
+
+.selector-gift .zan-stepper__plus {
+  line-height: 44rpx;
+  background-color: #d00;
+  color: #fff;
+}
+
+.selector-gift .zan-stepper__text {
+  border: 0;
+}
+
+/*zan-selectcard__list  */
+
+.zan-selectcard__list {
+  display: flex;
+  overflow-x: auto;
+  padding: 16rpx 24rpx;
+}
+
+.zan-selectcard__list label {
+  /* width: 30%; */
+  text-align: center;
+  display: block;
+}
+
+.zan-selectcard__list label radio {
+  display: none;
+}
+
+.zan-selectcard__list .item {
+  margin: 12rpx;
+  border-radius: 4rpx;
+  overflow: hidden;
+  position: relative;
+}
+
+.zan-selectcard__list .item.active::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 4rpx solid #d00;
+  border-radius: 12rpx;
+  z-index: 9;
+  box-sizing: border-box;
+}
+
+.zan-selectcard__list .item .item-after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+  z-index: 1;
+}
+
+.zan-selectcard__list .item .item-after icon {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+}
+
+.zan-selectcard__list .item.active .item-after {
+  display: block;
+}
+
+.zan-selectcard__list .item image {
+  width: 25vw;
+  height: 14vw;
+  opacity: 0.54;
+  border-radius: 12rpx;
+}
+
+.zan-selectcard__list .item.active image {
+  opacity: 1;
+}
+
+/*footer  */
+
+.footer {
+  padding: 16rpx;
+}
+
+.footer .item {
+  line-height: 1.2em;
+}
+
+.footer .item .display-4 {
+  padding-top: 8rpx;
+}
+
+.footer button {
+  width: 25%;
+}

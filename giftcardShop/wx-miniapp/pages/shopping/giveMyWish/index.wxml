@@ -1,0 +1,30 @@
+<!--pages/shopping/giveMyWish/index.wxml-->
+
+<!-- 引入zanui表单field -->
+<import src="/assets/plugin/zanui/field/index" />
+
+<!-- container -->
+<view class='container'>
+
+  <!-- banner-card -->
+  <view class='banner-card'>
+    <view class='item-content'>
+      <image mode='aspectFill' src='{{ cover }}'></image>
+      <view class='item-title'>这里是卡片名称</view>
+    </view>
+  </view>
+  <view class='zan-panel'>
+
+    <!--form  -->
+    <template is="zan-field" data="{{ type: 'textarea', placeholder: '送上您的祝福', value }}"></template>
+
+    <view class='zan-cell' bindtap='chooseImage'>
+      <view class='zan-icon zan-icon-photograph mr-2'></view>
+      选择图片或视频
+    </view>
+    <view class='content-block'>
+      <button bindtap='shareMe' open-type='share' type='primary' class="zan-btn zan-btn--primary">送给朋友</button>
+    </view>
+  </view>
+</view>
+

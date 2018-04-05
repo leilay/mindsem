@@ -1,0 +1,45 @@
+<!--pages/my/myGiftOrderDetail/index.wxml-->
+<view class='container'>
+  <view class='zan-panel'>
+    <view class='media'>
+      <view class='item-media'>
+        <image mode='aspectFill' src='https://img30.360buyimg.com/sku/jfs/t9436/32/1755502382/67080/1fcbf25/59bf24fcNc67fc1c4.jpg' class=''></image>
+      </view>
+      <view class='item-inner'>
+        <navigator url='/pages/my/myGiftOrderDetail/index' class='item-title'>金龙鱼礼品卡 2张</navigator>
+        <view class='display-4'>￥131.00</view>
+
+        <view class='mt-2'>已被 XXX 领取</view>
+      </view>
+
+    </view>
+  </view>
+  <view class='zan-panel'>
+    <view class='zan-cell'>
+      <view class='zan-cell__bd'>礼品卡1</view>
+      <view class='zan-cell__ft'>￥100.00</view>
+    </view>
+    <view class='zan-cell'>
+      <view class='zan-cell__bd'>礼品卡2</view>
+      <view class='zan-cell__ft'>￥100.00</view>
+    </view>
+  </view>
+  <view class='zan-panel'>
+    <view class='zan-cell'>
+      <view class='zan-cell__bd'>订单号</view>
+      <view class='zan-cell__ft'>12345678901234</view>
+    </view>
+    <view class='zan-cell'>
+      <view class='zan-cell__bd'>下单时间</view>
+      <view class='zan-cell__ft'>2018-04-04 15:03</view>
+    </view>
+    <view class='zan-cell'>
+      <view class='zan-cell__bd'>已付款</view>
+      <view class='zan-cell__ft'>￥131.00</view>
+    </view>
+
+  </view>
+  <view class='py-3 text-center'>
+    <navigator url='/pages/common/help/index' class='link-text'>售后服务</navigator>
+  </view>
+</view>

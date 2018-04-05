@@ -1,0 +1,34 @@
+<!--pages/shopping/giveMyWishSuccess/index.wxml-->
+<view class='container'>
+
+  <view class='card card-flush'>
+    <!-- banner-card -->
+    <view class='banner-card'>
+
+      <view class='item-content'>
+        <view class='display-4'>
+          <view class='zan-icon zan-icon-passed'></view> 已赠送</view>
+        <image mode='aspectFill' src='https://img13.360buyimg.com/da/jfs/t18850/343/892312785/120181/7f84ae7b/5ab07948N1d354a51.png' class='my-3'></image>
+
+        <view class='title'>金龙鱼礼品卡 2张
+          <text class='small'>￥</text>131.00</view>
+
+      </view>
+      <view class=''>
+        <view class='zan-cell'>
+          <view class='zan-cell__bd'>礼品卡金卡 x 1</view>
+          <view class='zan-cell__ft'>￥100.00</view>
+        </view>
+        <view class='zan-cell'>
+          <view class='zan-cell__bd'>礼品卡银卡 x 1</view>
+          <view class='zan-cell__ft'>￥31.00</view>
+        </view>
+      </view>
+      <view class='content-block'>
+        <button bindtap='gotoIndex' class='zan-btn zan-btn--primary zan-btn--plain'>完成</button>
+      </view>
+
+    </view>
+  </view>
+
+</view>

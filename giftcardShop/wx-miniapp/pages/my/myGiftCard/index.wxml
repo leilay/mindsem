@@ -1,0 +1,28 @@
+<!--pages/my/myGiftCard/index.wxml-->
+
+<import src="/assets/plugin/zanui/tab/index" />
+
+<view class='container'>
+
+  <template is="zan-tab" data="{{ ...tab1, componentId: 'tab1' }}"></template>
+
+  <view class='content-block'>
+    <view class='card'>
+      <view class="card-header card-header-pic">
+        <view class='text-white my-3 w-100'>
+          <view class='flexbox'>
+            <text class='item title'>金龙鱼礼品卡-金卡</text>
+            <text class='float-right'>可兑换</text>
+          </view>
+          <view class='caption'>有效期：2018-12-31</view>
+          <view class='caption'>价值：￥398.00</view>
+        </view>
+      </view>
+      <view class='card-footer'>
+        <!-- <navigator url='' class='link'>再次购买</navigator> -->
+        <navigator url='/pages/shopping/giveMyWish/index' class='link'>转增好友</navigator>
+        <navigator url='' class='text-danger'>立即兑换</navigator>
+      </view>
+    </view>
+  </view>
+</view>

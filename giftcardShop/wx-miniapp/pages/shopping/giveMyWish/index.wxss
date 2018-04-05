@@ -1,0 +1,5 @@
+/* pages/shopping/giveMyWish/index.wxss */
+
+textarea.zan-field__input {
+  height: 6em;
+}

@@ -1,0 +1,108 @@
+<!--pages/shopping/exchange/index.wxml-->
+
+<import src="/assets/plugin/zanui/selectcard/index" />
+
+<view class='container'>
+
+  <view class='bg-white'>
+
+    <view class='banner-card'>
+      <view class='item-content'>
+        <image mode='aspectFill' src='https://img13.360buyimg.com/da/jfs/t18850/343/892312785/120181/7f84ae7b/5ab07948N1d354a51.png'></image>
+      </view>
+    </view>
+
+    <view class='section'>
+      <!-- 选择卡面 -->
+      <view class='section-title'>
+        <view class='section-content'>
+          <view class='title'>选择套餐</view>
+        </view>
+      </view>
+
+      <template is="zan-selectcard" data="{{ items, checkedValue: checked.base, componentId: 'base' }}"></template>
+
+      <view class='content-block'>
+        <view class='title strong'>礼品卡组合套餐1</view>
+        <view class='desc'>
+          <view>食用油 葵花籽食用调和油5L *1</view>
+          <view>金龙鱼 东北大米 蟹稻共生 盘锦大米5KG *1</view>
+          <view>金龙鱼 食用油纯芝麻香油 400ML *1</view>
+          <view>金龙鱼乳玉皇妃稻香贡米1kg *1</view>
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+  <view class='zan-panel'>
+    <view class='zan-cell zan-cell--access' bindtap='toggleBottomPopup'>
+      <view class='zan-cell__bd'>
+        配送至
+      </view>
+      <view class='zan-cell__ft'>
+        <view>曾源(136****4740)</view>
+        <view class='small'>深圳市龙华区民治街道沙元埔大厦1018</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+
+<view class="popup-example--bottom zan-popup zan-popup--bottom {{ showBottomPopup ? 'zan-popup--show' : ''}}">
+  <view class="zan-popup__mask" catchtap="toggleBottomPopup"></view>
+  <view class="zan-popup__container">
+
+    <view class='actionsheet-header'>
+      <view class='item-title'>选择收货地址</view>
+    </view>
+    <!-- Simple media -->
+    <view class="list-block">
+      <radio-group>
+
+        <label class="item-content media">
+          <view class='item-media'>
+            <radio id="radio0" value="radio0" checked />
+          </view>
+          <view class="item-inner">
+            <view class="item-row">
+              <view class="item-title">老曾（13677778888）</view>
+            </view>
+            <view class="item-text">广东省，深圳市，龙华区，民治街道，这里是很详细的地址1001</view>
+          </view>
+        </label>
+        <label class="item-content media">
+          <view class='item-media'>
+            <radio id="radio1" value="radio1" />
+          </view>
+          <view class="item-inner">
+            <view class="item-row">
+              <view class="item-title">老曾（13677778888）</view>
+            </view>
+            <view class="item-text">广东省，深圳市，龙华区，民治街道，这里是很详细的地址1001</view>
+          </view>
+        </label>
+        <label class="item-content media">
+          <view class='item-media'>
+            <radio id="radio2" value="radio2" />
+          </view>
+          <view class="item-inner">
+            <view class="item-row">
+              <view class="item-title">老曾（13677778888）</view>
+            </view>
+            <view class="item-text">广东省，深圳市，龙华区，民治街道，这里是很详细的地址1001</view>
+          </view>
+        </label>
+      </radio-group>
+
+    </view>
+    <view class='actionsheet-footer'>
+
+      <button class="zan-btn zan-btn--primary" catchtap="toggleBottomPopup">
+        确认
+      </button>
+    </view>
+  </view>
+</view>

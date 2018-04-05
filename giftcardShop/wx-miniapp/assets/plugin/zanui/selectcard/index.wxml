@@ -1,0 +1,37 @@
+<template name="zan-selectcard">
+  <radio-group class="zan-selectcard__list" name="{{ name || componentId || '' }}" bindchange="_handleZanSelectCardChange" data-component-id="{{ componentId }}">
+    <label wx:for="{{ items }}" wx:key="value">
+      <view class="item {{ item.value === checkedValue ? 'active':'' }}">
+        <radio class="" value="{{ item.value }}" checked="{{ item.value === checkedValue }}" />
+        <view class="item-inner" style="{{ parse.getItemStyle(item, checkedValue, activeColor) }}">
+          <image mode='aspectFill' src='{{ item.img }}'></image>
+        </view>
+        <view class="item-after">
+          <icon type="success" color="{{ parse.getColor(activeColor) }}" size='18'></icon>
+        </view>
+      </view>
+    </label>
+  </radio-group>
+</template>
+
+<wxs module="parse">
+  function getColor(color) {
+    color = color || '#ff4444'
+    return color;
+  }
+
+  module.exports = {
+    getColor: getColor,
+    getItemStyle: function(item, checkedValue, activeColor) {
+      var padding = item.padding * 10;
+      var style = 'padding-left: ' + padding + 'px;';
+
+      // 如果为选中状态，则高亮
+      if (item.value === checkedValue) {
+        style += 'color: ' + getColor(activeColor);
+      }
+
+      return style;
+    }
+  };
+</wxs>

@@ -1,0 +1,51 @@
+/* pages/my/myOrderList/index.wxss */
+
+.thumb-sm {
+  width: 128rpx;
+  height: 128rpx;
+  max-height: 128rpx;
+}
+
+/* card */
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-header {
+  padding-top: 24rpx;
+  padding-bottom: 24rpx;
+}
+
+.card-footer button[size="mini"] {
+  margin-top: 12rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  margin-left: 16rpx;
+}
+
+/* order-details */
+
+.order-details {
+  background-color: #f9f9f9;
+  height: 160rpx;
+}
+
+.order-details .media:first-child:last-child .item-inner {
+  display: block;
+}
+
+.order-details .media:first-child:last-child {
+  display: flex;
+  padding-right: 32rpx;
+}
+
+.order-details .media {
+  display: inline-block;
+  padding-right: 0;
+}
+
+.order-details .media .item-inner {
+  display: none;
+}

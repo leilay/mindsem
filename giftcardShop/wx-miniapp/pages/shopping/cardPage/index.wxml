@@ -1,0 +1,96 @@
+<!--pages/shopping/cardPage/index.wxml-->
+
+<import src="/assets/plugin/zanui/stepper/index" />
+<import src="/assets/plugin/zanui/selectcard/index" />
+
+<view class='footer'>
+  <view class='flexbox'>
+    <view class='item'>
+      <view class='caption'>共0份</view>
+      <view class='display-4 text-money'>
+        <text class='small'>￥</text>0</view>
+    </view>
+    <button type='primary' class='zan-btn zan-btn--primary' bindtap='gotoNext'>购买</button>
+  </view>
+</view>
+
+<view class='container'>
+
+  <view class='bg-white'>
+    <view class='banner-card'>
+      <view class='item-content'>
+        <image mode='aspectFill' src='{{ cover }}'></image>
+      </view>
+    </view>
+
+    <view class='section'>
+      <!-- 选择卡面 -->
+      <view class='section-title'>
+        <view class='section-content'>
+          <view class='title'>选择卡面</view>
+        </view>
+      </view>
+
+
+      <template is="zan-selectcard" data="{{ items, checkedValue: checked.base, componentId: 'base' }}"></template>
+
+      <!-- 选择礼物及数量 -->
+      <view class='section-title'>
+        <view class='section-content'>
+          <view class='title'>选择礼物及数量</view>
+        </view>
+      </view>
+
+      <view class='selector-gift'>
+        <view class='item-content'>
+          <view class='item-inner'>
+            <view class='item-title'>
+              这里是礼品卡名称
+            </view>
+            <view class='item-text'>
+              ￥498
+            </view>
+          </view>
+          <view class='item-after'>
+            <template is="zan-stepper" data="{{ ...stepper1, componentId: 'stepper1', size: 'small' }}" />
+          </view>
+        </view>
+        <view class='item-content'>
+          <view class='item-inner'>
+            <view class='item-title'>
+              这里是礼品卡名称
+            </view>
+            <view class='item-text'>
+              ￥498
+            </view>
+          </view>
+          <view class='item-after'>
+            <template is="zan-stepper" data="{{ ...stepper2, componentId: 'stepper2', size: 'small' }}" />
+          </view>
+        </view>
+        <view class='item-content'>
+          <view class='item-inner'>
+            <view class='item-title'>
+              这里是礼品卡名称
+            </view>
+            <view class='item-text'>
+              ￥498
+            </view>
+          </view>
+          <view class='item-after'>
+            <template is="zan-stepper" data="{{ ...stepper3, componentId: 'stepper3', size: 'small' }}" />
+          </view>
+        </view>
+      </view>
+<!-- 
+      <view class="zan-panel">
+        <view class="zan-cell">
+          <view class="zan-cell__bd">单行列表</view>
+          <view class="zan-cell__ft">123</view>
+        </view>
+      </view> -->
+
+    </view>
+
+  </view>
+</view>

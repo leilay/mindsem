@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/shopping/exchange/index",
+    "pages/shopping/cardPage/index",
+
+    "pages/index/index",
+    "pages/my/myGiftCard/index",
+    "pages/my/index",
+    "pages/common/help/index",
+
+    "pages/shopping/getGiftSuccess/index",
+    "pages/shopping/giftOrderRecord/index",
+    "pages/shopping/getGift/index",
+    "pages/shopping/giveMyWish/index",
+    "pages/shopping/giveMyWishSuccess/index",
+
+    "pages/my/myOrderList/index",
+    "pages/my/myGiftOrderDetail/index",
+    "pages/my/myGiftOrderList/index",
+
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "金龙鱼礼品卡",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#fc828b",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "有礼",
+        "iconPath": "assets/img/app.icon/icon-gift.png",
+        "selectedIconPath": "assets/img/app.icon/icon-gift-active.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "assets/img/app.icon/icon-my.png",
+        "selectedIconPath": "assets/img/app.icon/icon-my-active.png"
+      }
+    ]
+  }
+}

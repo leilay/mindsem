@@ -1,0 +1,10 @@
+/* pages/my/myGiftCard/index.wxss */
+
+.card-header-pic {
+  height: 240rpx;
+  background-color: #d00;
+}
+
+.content-block {
+  margin-bottom: 160rpx;
+}

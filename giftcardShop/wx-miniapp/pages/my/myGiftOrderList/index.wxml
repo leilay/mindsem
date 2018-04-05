@@ -1,0 +1,50 @@
+<!--pages/my/myGiftOrderList/index.wxml-->
+
+<view class='container'>
+  <view class='zan-panel'>
+
+    <view class='media'>
+      <view class='item-media'>
+        <image mode='aspectFill' src='https://img30.360buyimg.com/sku/jfs/t9436/32/1755502382/67080/1fcbf25/59bf24fcNc67fc1c4.jpg' class=''></image>
+      </view>
+      <view class='item-inner'>
+        <navigator url='/pages/my/myGiftOrderDetail/index' class='item-title'>金龙鱼礼品卡 2张</navigator>
+        <view class='item-text'>购买时间：2018-04-04 15:03</view>
+        <view class='display-4'>￥131.00</view>
+
+        <view class='mt-2'>已被 XXX 领取</view>
+      </view>
+
+    </view>
+    <view class='media'>
+      <view class='item-media'>
+        <image mode='aspectFill' src='https://img30.360buyimg.com/sku/jfs/t9436/32/1755502382/67080/1fcbf25/59bf24fcNc67fc1c4.jpg' class=''></image>
+      </view>
+      <view class='item-inner'>
+        <navigator url='/pages/my/myGiftOrderDetail/index' class='item-title'>金龙鱼礼品卡 2张</navigator>
+        <view class='item-text'>购买时间：2018-04-04 15:03</view>
+        <view class='display-4'>￥131.00</view>
+
+        <view class='mt-2'>已赠送 XXX 尚未领取</view>
+      </view>
+
+    </view>
+    <view class='media'>
+      <view class='item-media'>
+        <image mode='aspectFill' src='https://img30.360buyimg.com/sku/jfs/t9436/32/1755502382/67080/1fcbf25/59bf24fcNc67fc1c4.jpg' class=''></image>
+      </view>
+      <view class='item-inner'>
+        <navigator url='/pages/my/myGiftOrderDetail/index' class='item-title'>金龙鱼礼品卡 2张</navigator>
+        <view class='item-text'>购买时间：2018-04-04 15:03</view>
+        <view class='display-4'>￥131.00</view>
+
+        <view class='mt-2'>已赠送 XXX 超时未领取</view>
+        <view>
+          <button bindtap='giveFriend' class='zan-btn zan-btn--mini zan-btn--primary zan-btn--plain'>送给其他朋友</button>
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+</view>

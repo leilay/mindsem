@@ -1,0 +1,60 @@
+/**index.wxss**/
+
+/*banner-index  */
+
+.banner-index swiper {
+  height: 50vw;
+}
+
+.banner-index image {
+  width: 100%;
+  height: 50vw;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24rpx 0;
+}
+
+.card-list+.section-title {
+  margin-top: 32rpx;
+}
+
+.card-list .item {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 16rpx 24rpx;
+}
+
+.card-list .item .item-content {
+  padding: 8rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  box-shadow: 0 0 5rpx rgba(0, 0, 0, 0.24), 0 16rpx 16rpx rgba(0, 0, 0, 0.05);
+}
+
+.card-list .item .item-content .item-media image {
+  height: 24vw;
+  border-radius: 6rpx;
+}
+
+.card-list .item .item-content .item-title {
+  line-height: 2em;
+}
+
+/*button-bottom  */
+
+.button-bottom {
+  position: fixed;
+  background-color: #fff;
+  font-size: 28rpx;
+  left: 30%;
+  right: 30%;
+  z-index: 9;
+  bottom: 32rpx;
+  text-align: center;
+  padding: 20rpx 0;
+  border-radius: 48rpx;
+  box-shadow: 0 0 16rpx rgba(0, 0, 0, 0.24);
+}

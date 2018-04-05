@@ -1,0 +1,10 @@
+/* pages/my/myGiftOrderDetail/index.wxss */
+
+.item-media image {
+  width: 30vw;
+  height: 18vw;
+  border-radius: 8rpx;
+  box-shadow: 0 2rpx 6rpx rgba(0, 0, 0, 0.12),
+                0 2rpx 4rpx rgba(0, 0, 0, 0.24),
+                0 2rpx 16rpx rgba(0, 0, 0, 0.05);
+}

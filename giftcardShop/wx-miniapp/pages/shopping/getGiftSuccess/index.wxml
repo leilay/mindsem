@@ -1,0 +1,46 @@
+<!--pages/shopping/getGift/getGift.wxml-->
+<view class='container'>
+
+  <view class='panel'>
+    <!-- banner-card -->
+    <view class='banner-card'>
+      <view class='card'>
+        <image mode='aspectFill' src='{{ cover }}'></image>
+        <view class='item-title'>收到礼品卡，已放入卡包</view>
+        <view class='display-4'>金龙鱼礼品卡 2张</view>
+        <view class='display-4'>
+          <text class='text-money'>￥131.00</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='zan-cell'>
+      <view class='zan-cell__bd'>礼品卡1</view>
+      <view class='zan-cell__ft'>￥100.00</view>
+    </view>
+    <view class='zan-cell'>
+      <view class='zan-cell__bd'>礼品卡2</view>
+      <view class='zan-cell__ft'>￥31.00</view>
+    </view>
+
+  </view>
+
+  <view class='zan-panel'>
+    <view class='media'>
+      <view class='item-media'>
+        <image class='thumb-sm' src='http://www.qqzhi.com/uploadpic/2014-05-14/051120936.jpg'></image>
+      </view>
+      <view class='item-inner'>
+        <view class='item-title'>曾源 祝您</view>
+        <view class='item-text'>身体健康，万事如意</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='text-center py-3'>
+    <navigator open-type='switchTab' url='/pages/index/index' class='link-text'>我也要送</navigator>
+    <text class='px-2'>|</text>
+    <navigator class='link-text'>进卡包查看</navigator>
+  </view>
+
+</view>
