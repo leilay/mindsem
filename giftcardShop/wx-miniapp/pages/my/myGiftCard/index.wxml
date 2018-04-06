@@ -2,13 +2,21 @@
 
 <import src="/assets/plugin/zanui/tab/index" />
 
+<!-- floating-button -->
 <view class='floating-button-block'>
   <navigator open-type='switchTab' class='floating-button' url='/pages/index/index'>
     <text class='zan-icon zan-icon-wap-home'></text>
   </navigator>
 </view>
 
+<!-- footer -->
+<view class='footer'>
+  <button type='primary' class='zan-btn zan-btn-primary' bindtap="toggleBottomPopup">＋ 绑定礼品卡</button>
+</view>
+
+<!-- container -->
 <view class='container'>
+
   <template is="zan-tab" data="{{ ...tab1, componentId: 'tab1' }}"></template>
   <view class='content-block'>
 
@@ -63,4 +71,25 @@
 
   </view>
 
+</view>
+
+<view class="popup-example--bottom zan-popup zan-popup--bottom {{ showBottomPopup ? 'zan-popup--show' : ''}}">
+  <view class="zan-popup__mask" catchtap="toggleBottomPopup"></view>
+  <view class="zan-popup__container">
+    <view class='actionsheet-header'>卡密校验</view>
+    <view class='actionsheet-content'>
+      <view class='content-block'>
+        <view class='input-wrapper'>
+          <input class='input-bordered' placeholder='ABCD-ABCD-ABCD-ABCD' cursor-spacing='96'></input>
+          <view class='icon icon-scan' bindtap='toScan'>
+            <image mode='widthFix' src='/assets/img/ui/icon-scan.png'></image>
+          </view>
+        </view>
+        <view class='caption mt-3'>输入卡号，您可以选择绑定到我的礼品卡，或者立即兑换</view>
+      </view>
+    </view>
+    <view class='actionsheet-footer'>
+      <button class='zan-btn zan-btn--primary' bindtap='toVerify'>立即校验</button>
+    </view>
+  </view>
 </view>

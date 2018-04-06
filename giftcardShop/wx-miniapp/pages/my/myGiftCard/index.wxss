@@ -9,10 +9,34 @@
   background-color: #d00;
 }
 
-.content-block {
+.container>.content-block {
   margin-bottom: 160rpx;
 }
 
 .closed .card-header-pic {
   background-color: #ccc;
+}
+
+.floating-button-block {
+  bottom: 128rpx;
+}
+
+.input-bordered {
+  border: 1px solid #ddd;
+  padding: 16rpx;
+  border-radius: 8rpx;
+  font-size: 40rpx;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.icon-scan {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 16rpx;
+  width: 56rpx;
+  z-index: 5;
 }

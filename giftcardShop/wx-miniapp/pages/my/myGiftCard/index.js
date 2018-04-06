@@ -8,6 +8,8 @@ Page(extend({}, Tab, {
    */
   data: {
 
+    showBottomPopup: false,
+
     tab1: {
       list: [{
         id: 'all',
@@ -33,6 +35,38 @@ Page(extend({}, Tab, {
 
   },
 
+
+  toggleBottomPopup() {
+    this.setData({
+      showBottomPopup: !this.data.showBottomPopup
+    });
+  },
+  toScan: function () {
+    wx.showToast({
+      title: '扫一扫',
+    })
+  },
+  toVerify: function () {
+    this.setData({
+      showBottomPopup: !this.data.showBottomPopup
+    });
+    wx.showModal({
+      title: '提示',
+      content: '您的礼品卡已校验通过，并加入到您的卡包中',
+      confirmText: '立即兑换',
+      cancelText: '以后再说',
+      success: function (res) {
+        if (res.confirm) {
+          wx.navigateTo({
+            url: '/pages/shopping/exchange/index',
+          })
+
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

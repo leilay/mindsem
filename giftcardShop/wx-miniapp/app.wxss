@@ -16,6 +16,10 @@
   background-color: #fff;
 }
 
+.floating-button .zan-icon {
+  font-size: 40rpx;
+}
+
 .panel {
   background-color: #fff;
 }

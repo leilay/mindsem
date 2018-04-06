@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/my/myGiftCard/index",
     "pages/my/myReturn/index",
     "pages/my/myReturnDetail/index",
     "pages/my/myReturnEdit/index",
@@ -8,7 +9,6 @@
 
     "pages/my/myOrderLogistics/index",
     "pages/my/myOrderDetail/index",
-    "pages/my/myGiftCard/index",
     "pages/my/myAddress/index",
     "pages/my/myAddressEdit/index",
     "pages/my/myOrderList/index",

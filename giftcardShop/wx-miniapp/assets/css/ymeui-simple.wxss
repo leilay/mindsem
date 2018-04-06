@@ -408,7 +408,6 @@ navigator.link, .display-inline {
   position: fixed;
   bottom: 0;
   width: 100%;
-  min-height: 96rpx;
   z-index: 5;
 }
 
@@ -987,7 +986,7 @@ button.rounded-0::after, .button.rounded-0::after {
   position: fixed;
   right: 32rpx;
   bottom: 32rpx;
-  z-index: 99;
+  z-index: 5;
 }
 
 .with-footer .floating-button-block {
