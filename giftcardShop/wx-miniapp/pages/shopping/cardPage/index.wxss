@@ -52,7 +52,6 @@
 }
 
 .selector-gift .zan-stepper--small .zan-stepper__minus {
-  line-height: 36rpx;
   color: #d00;
 }
 
@@ -64,6 +63,13 @@
 
 .selector-gift .zan-stepper__text {
   border: 0;
+}
+
+.zan-stepper .zan-stepper--disabled {
+  background: transparent;
+  color: #bbb !important;
+  filter: grayscale(100%);
+  border-color: #bbb !important;
 }
 
 /*zan-selectcard__list  */

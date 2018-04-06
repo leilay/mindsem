@@ -1,2 +1,23 @@
 <!--pages/common/help/index.wxml-->
-<text>pages/common/help/index.wxml</text>
+<view class='container'>
+  <view class='bg-white'>
+    <view class='zan-cell'>
+      <view class='zan-cell__bd'>订单有哪些状态？</view>
+    </view>
+    <view class='zan-cell'>
+      <view class='zan-cell__bd'>客户咨询退款周期及方式？</view>
+    </view>
+    <view class='zan-cell'>
+      <view class='zan-cell__bd'>怎么一直显示正在出库？</view>
+    </view>
+    <view class='zan-cell'>
+      <view class='zan-cell__bd'>订单为什么被拆分？</view>
+    </view>
+    <view class='zan-cell'>
+      <view class='zan-cell__bd'>在哪里可以修改订单？</view>
+    </view>
+    <view class='zan-cell'>
+      <view class='zan-cell__bd'>修改订单需要注意些什么？</view>
+    </view>
+  </view>
+</view>

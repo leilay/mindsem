@@ -1,12 +1,23 @@
 <!--pages/my/myOrderList/index.wxml-->
 
+<import src="/assets/plugin/zanui/tab/index" />
+
+
+<view class='floating-button-block'>
+  <navigator open-type='switchTab' class='floating-button' url='/pages/index/index'>
+    <text class='zan-icon zan-icon-wap-home'></text>
+  </navigator>
+</view>
+
 <view class='container'>
 
-  <view>
+  <template is="zan-tab" data="{{ ...tab1, componentId: 'tab1' }}"></template>
+
+  <view class='py-3'>
     <view class='card card-flush'>
       <view class='card-header'>
         <text>单号：1234567890123456</text>
-        <text class='desc'>已完成</text>
+        <text class='desc'>待收货</text>
       </view>
       <view class='card-content'>
         <view class='order-details' bindtap='gotoDetail'>
@@ -84,8 +95,8 @@
       <view class='card-footer'>
         <view></view>
         <view>
-          <button size='mini' type='default'>取消订单</button>
-          <button size='mini' type='primary'>立即兑换</button>
+          <button size='mini' type='default' bindtap='gotoLogistics'>查看物流</button>
+          <button size='mini' type='primary' bindtap='confirmOrder'>确认收货</button>
         </view>
       </view>
     </view>
@@ -122,8 +133,93 @@
       <view class='card-footer'>
         <view></view>
         <view>
-          <button size='mini' type='default'>取消订单</button>
-          <button size='mini' type='primary'>立即兑换</button>
+          <button size='mini' type='default'>申请售后</button>
+          <!-- <button size='mini' type='primary'>晒单评价</button> -->
+        </view>
+      </view>
+    </view>
+    <view class='card card-flush'>
+      <view class='card-header'>
+        <text>单号：1234567890123456</text>
+        <text class='desc'>已取消</text>
+      </view>
+      <view class='card-content'>
+        <view class='order-details' bindtap='gotoDetail'>
+          <scroll-view scroll-x='true'>
+            <view class='media'>
+              <view class='item-media'>
+                <image class='thumb-sm' src='https://img13.360buyimg.com/n1/jfs/t19474/319/81044012/54555/f298578d/5a5c1112N61f521a7.jpg'></image>
+              </view>
+              <view class='item-inner'>
+                <view class='item-title line2'>金龙鱼 食用油 物理压榨 葵花籽 亚麻籽 食用调和油5L</view>
+              </view>
+            </view>
+            <view class='media'>
+              <view class='item-media'>
+                <image class='thumb-sm' src='https://img13.360buyimg.com/n1/jfs/t19474/319/81044012/54555/f298578d/5a5c1112N61f521a7.jpg'></image>
+              </view>
+              <view class='item-inner'>
+                <view class='item-title line2'>金龙鱼 食用油 物理压榨 葵花籽 亚麻籽 食用调和油5L</view>
+              </view>
+            </view>
+            <view class='media'>
+              <view class='item-media'>
+                <image class='thumb-sm' src='https://img13.360buyimg.com/n1/jfs/t19474/319/81044012/54555/f298578d/5a5c1112N61f521a7.jpg'></image>
+              </view>
+              <view class='item-inner'>
+                <view class='item-title line2'>金龙鱼 食用油 物理压榨 葵花籽 亚麻籽 食用调和油5L</view>
+              </view>
+            </view>
+            <view class='media'>
+              <view class='item-media'>
+                <image class='thumb-sm' src='https://img13.360buyimg.com/n1/jfs/t19474/319/81044012/54555/f298578d/5a5c1112N61f521a7.jpg'></image>
+              </view>
+              <view class='item-inner'>
+                <view class='item-title line2'>金龙鱼 食用油 物理压榨 葵花籽 亚麻籽 食用调和油5L</view>
+              </view>
+            </view>
+            <view class='media'>
+              <view class='item-media'>
+                <image class='thumb-sm' src='https://img13.360buyimg.com/n1/jfs/t19474/319/81044012/54555/f298578d/5a5c1112N61f521a7.jpg'></image>
+              </view>
+              <view class='item-inner'>
+                <view class='item-title line2'>金龙鱼 食用油 物理压榨 葵花籽 亚麻籽 食用调和油5L</view>
+              </view>
+            </view>
+            <view class='media'>
+              <view class='item-media'>
+                <image class='thumb-sm' src='https://img13.360buyimg.com/n1/jfs/t19474/319/81044012/54555/f298578d/5a5c1112N61f521a7.jpg'></image>
+              </view>
+              <view class='item-inner'>
+                <view class='item-title line2'>金龙鱼 食用油 物理压榨 葵花籽 亚麻籽 食用调和油5L</view>
+              </view>
+            </view>
+            <view class='media'>
+              <view class='item-media'>
+                <image class='thumb-sm' src='https://img13.360buyimg.com/n1/jfs/t19474/319/81044012/54555/f298578d/5a5c1112N61f521a7.jpg'></image>
+              </view>
+              <view class='item-inner'>
+                <view class='item-title line2'>金龙鱼 食用油 物理压榨 葵花籽 亚麻籽 食用调和油5L</view>
+              </view>
+            </view>
+          </scroll-view>
+        </view>
+        <view class='px-3 py-2 item-row'>
+          <view>
+            <text class='mr-2'>共1件商品</text> 实付款：
+            <text class='text-danger'>￥108.00</text>元
+          </view>
+          <view>
+            优惠：
+            <text class='text-danger'>￥10</text>
+          </view>
+        </view>
+      </view>
+
+      <view class='card-footer'>
+        <view></view>
+        <view>
+          <button size='mini' type='primary' bindtap='gotoExchange'>重新下单</button>
         </view>
       </view>
     </view>

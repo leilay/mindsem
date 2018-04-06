@@ -106,7 +106,6 @@ page {
   color: rgba(0, 0, 0, 0.87);
 }
 
-
 /*floating-button  */
 
 .floating-button {
@@ -179,3 +178,4 @@ page {
 .coupon-wx .coupon-split::before, .coupon-wx .coupon-split::after {
   background-color: #ff5d5b;
 }
+

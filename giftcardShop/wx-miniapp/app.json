@@ -1,22 +1,30 @@
 {
   "pages": [
-    "pages/shopping/exchange/index",
-    "pages/shopping/cardPage/index",
-
     "pages/index/index",
-    "pages/my/myGiftCard/index",
+    "pages/my/myReturn/index",
+    "pages/my/myReturnDetail/index",
+    "pages/my/myReturnEdit/index",
     "pages/my/index",
-    "pages/common/help/index",
 
-    "pages/shopping/getGiftSuccess/index",
-    "pages/shopping/giftOrderRecord/index",
-    "pages/shopping/getGift/index",
-    "pages/shopping/giveMyWish/index",
-    "pages/shopping/giveMyWishSuccess/index",
-
+    "pages/my/myOrderLogistics/index",
+    "pages/my/myOrderDetail/index",
+    "pages/my/myGiftCard/index",
+    "pages/my/myAddress/index",
+    "pages/my/myAddressEdit/index",
     "pages/my/myOrderList/index",
     "pages/my/myGiftOrderDetail/index",
     "pages/my/myGiftOrderList/index",
+
+    "pages/shopping/exchangeSuccess/index",
+    "pages/shopping/exchange/index",
+    "pages/shopping/cardPage/index",
+    "pages/shopping/getGift/index",
+    "pages/shopping/getGiftSuccess/index",
+    "pages/shopping/giftOrderRecord/index",
+    "pages/shopping/giveMyWish/index",
+    "pages/shopping/giveMyWishSuccess/index",
+
+    "pages/common/help/index",
 
     "pages/logs/logs"
   ],

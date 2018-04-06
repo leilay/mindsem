@@ -1,0 +1,5 @@
+/* pages/my/myReturnEdit/index.wxss */
+
+.zan-panel {
+  padding: 24rpx;
+}

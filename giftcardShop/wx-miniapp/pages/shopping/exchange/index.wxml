@@ -2,6 +2,10 @@
 
 <import src="/assets/plugin/zanui/selectcard/index" />
 
+<view class='footer'>
+  <button type='primary' class='zan-btn--primary' bindtap='gotoNext'>确认兑换</button>
+</view>
+
 <view class='container'>
 
   <view class='bg-white'>

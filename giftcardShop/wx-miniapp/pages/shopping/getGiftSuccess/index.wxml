@@ -1,10 +1,10 @@
 <!--pages/shopping/getGift/getGift.wxml-->
 <view class='container'>
 
-  <view class='panel'>
+  <view class='card card-flush'>
     <!-- banner-card -->
     <view class='banner-card'>
-      <view class='card'>
+      <view class='item-content'>
         <image mode='aspectFill' src='{{ cover }}'></image>
         <view class='item-title'>收到礼品卡，已放入卡包</view>
         <view class='display-4'>金龙鱼礼品卡 2张</view>
@@ -40,7 +40,7 @@
   <view class='text-center py-3'>
     <navigator open-type='switchTab' url='/pages/index/index' class='link-text'>我也要送</navigator>
     <text class='px-2'>|</text>
-    <navigator class='link-text'>进卡包查看</navigator>
+    <navigator class='link-text' url='/pages/my/myGiftCard/index'>进卡包查看</navigator>
   </view>
 
 </view>

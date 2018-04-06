@@ -31,6 +31,11 @@ Page({
       phoneNumber: '13686474740',
     })
   },
+  getUserinfoAgain: function () {
+    wx.showToast({
+      title: '获取用户信息',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

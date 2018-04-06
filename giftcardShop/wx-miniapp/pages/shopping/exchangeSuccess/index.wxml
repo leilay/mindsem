@@ -1,0 +1,22 @@
+<!--pages/shopping/exchangeSuccess/index.wxml-->
+<view class='container'>
+  <view class='card card-flush py-4'>
+    <view class='content-block text-center'>
+      <icon type='success' size='48' class='mb-3'></icon>
+      <view>兑换成功</view>
+      <view class='mt-3'>
+        <button bindtap='gobackHome' class='zan-btn zan-btn--plain zan-btn--primary'>返回首页</button>
+      </view>
+    </view>
+  </view>
+  <view class='zan-panel'>
+    <view class='zan-cell'>
+      <view class='zan-cell__bd'>订单号</view>
+      <view class='zan-cell__ft'>123456789012345</view>
+    </view>
+    <view class='zan-cell'>
+      <view class='zan-cell__bd'>下单时间</view>
+      <view class='zan-cell__ft'>2018-04-05 15:46:13</view>
+    </view>
+  </view>
+</view>

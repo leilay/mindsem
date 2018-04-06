@@ -1,0 +1,61 @@
+<!--pages/my/myReturnDetail/index.wxml-->
+
+<import src="/assets/plugin/zanui/steps/index" />
+
+<view class='container'>
+
+  <view class='card card-flush'>
+    <view class='card-header'>
+      <view class=''>
+        <view>服务单号:
+          <text class='desc'>01234567890</text> </view>
+        <view>申请时间:
+          <text class='desc'>2018-09-12 14:07:18</text>
+        </view>
+      </view>
+    </view>
+    <view class='card-content'>
+      <view class='content-block'>
+        <template is="zan-steps" data="{{ type: 'horizontal', steps }}"></template>
+      </view>
+    </view>
+  </view>
+
+  <view class='card card-flush'>
+    <view class='card-header'>
+      <view class='item-title'>问题描述</view>
+    </view>
+    <view class='card-content'>
+      <view class='content-block'>
+        <view class='desc'>这里是我之前写的问题描述，不知道写的是否清楚。</view>
+        <view class='grid mt-2 gutter grid-pic'>
+          <view class='col-4'>
+            <image mode='aspectFit'></image>
+          </view>
+          <view class='col-4'>
+            <image mode='aspectFit'></image>
+          </view>
+          <view class='col-4'>
+            <image mode='aspectFit'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='card card-flush'>
+    <view class='card-header'>
+      <view class='item-title'>
+        客户确认 </view>
+    </view>
+    <view class='card-content'>
+      <view class=' content-block'>
+        <input placeholder='请输入退货快递单号'></input>
+      </view>
+    </view>
+  </view>
+  <view class='content-block'>
+    <view class='caption mb-3'>注：商家审核通过后，需要客户数据退货的快递单号</view>
+    <button type='primary' bindtap='goback' class='zan-btn zan-btn--primary'>确认退货</button>
+  </view>
+</view>

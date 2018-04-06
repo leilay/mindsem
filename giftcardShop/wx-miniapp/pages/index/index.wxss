@@ -40,7 +40,8 @@
 }
 
 .card-list .item .item-content .item-title {
-  line-height: 2em;
+  padding-top: 8rpx;
+  font-size: 28rpx;
 }
 
 /*button-bottom  */

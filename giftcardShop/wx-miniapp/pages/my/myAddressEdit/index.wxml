@@ -1,0 +1,54 @@
+<!--pages/my/myAddressEdit/index.wxml-->
+
+<view class='footer'>
+  <button bindtap='goBack' type='primary' class='rounded-0 button button-primary'>保存</button>
+</view>
+
+<view class='container'>
+  <form>
+    <view class='list-block'>
+
+
+      <view class='item-content'>
+        <view class='item-inner'>
+          <label>收货人</label>
+          <input type='text' placeholder='收货人姓名'></input>
+        </view>
+      </view>
+
+      <view class='item-content'>
+        <view class='item-inner'>
+          <label>手机</label>
+          <input type='number' placeholder='收货人手机号码'></input>
+        </view>
+      </view>
+      <view class='item-content'>
+        <view class='item-inner'>
+          <label class='item-title'>
+            <checkbox></checkbox>设为默认地址</label>
+        </view>
+      </view>
+      <view class='list-group-title'></view>
+
+      <view class='item-content'>
+        <view class='item-inner'>
+          <label>省市区</label>
+          <view class='item-title'>
+            <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+              <view class="picker">
+                {{region[0]}}，{{region[1]}}，{{region[2]}}
+              </view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+      <view class='item-content'>
+        <view class='item-inner'>
+          <textarea placeholder='请输入收货详细地址'></textarea>
+        </view>
+      </view>
+
+    </view>
+  </form>
+</view>

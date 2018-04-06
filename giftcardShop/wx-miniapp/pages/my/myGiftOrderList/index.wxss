@@ -9,6 +9,11 @@
                 0 2rpx 16rpx rgba(0, 0, 0, 0.05);
 }
 
+.media {
+  padding-top: 24rpx;
+  padding-bottom: 24rpx;
+}
+
 .media+.media {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #eee;
 }

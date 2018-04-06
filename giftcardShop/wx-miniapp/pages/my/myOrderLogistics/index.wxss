@@ -1,0 +1,18 @@
+/* pages/my/myOrderLogistics/index.wxss */
+
+
+.zan-steps--vsteps {
+  font-size: inherit;
+}
+
+.zan-steps--vsteps .zan-steps__step {
+  padding: 8px 0;
+}
+
+.zan-steps--vsteps .zan-steps__title {
+  display: block;
+}
+
+.zan-steps--vsteps .zan-steps__title--desc {
+  padding-left: 27px;
+}

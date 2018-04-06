@@ -1,0 +1,9 @@
+/* pages/my/myReturn/index.wxss */
+
+.item-title {
+  height: 2.8em;
+}
+
+.card-header, .card-footer, .item-text {
+  color: #999;
+}

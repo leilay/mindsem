@@ -1,0 +1,173 @@
+<!--pages/my/myReturn/index.wxml-->
+
+<import src="/assets/plugin/zanui/tab/index" />
+
+<view class='container'>
+  <!-- tab -->
+  <template is="zan-tab" data="{{ ...tab1, componentId: 'tab1' }}"></template>
+  <!--all  -->
+  <view hidden="{{tab1.selectedId != 'all'}}">
+    <view class='py-3'>
+      <view class='card card-flush'>
+        <view class='card-header'>
+          <view>订单编号：123456789012345</view>
+        </view>
+        <view class='card-content'>
+          <view class='list-block'>
+            <view class='media item-content'>
+              <view class='item-media'>
+                <image mode='aspectFill' src='https://img12.360buyimg.com/n7/jfs/t14167/221/329580004/62693/e01692ab/5a091d03N54e77227.jpg' class='thumb'></image>
+              </view>
+              <view class='item-inner'>
+                <view class='item-title'>金龙鱼 食用油 非转基因 压榨 一级 纯正玉米油4L 四月花开，买桶好</view>
+                <view class='item-text'>数量：1件</view>
+                <view class='text-right'>
+                  <button type='primary' class='zan-btn zan-btn--mini zan-btn--plain zan-btn--primary' bindtap='gotoReturnEdit'>申请售后</button>
+                </view>
+              </view>
+            </view>
+            <view class='media item-content'>
+              <view class='item-media'>
+                <image mode='aspectFill' src='https://img11.360buyimg.com/n7/jfs/t9472/35/1798335203/45281/1dc5e9b/59bf20ceN2f8fd55f.jpg' class='thumb'></image>
+              </view>
+              <view class='item-inner'>
+                <view class='item-title'>金龙鱼 东北大米 蟹稻共生 盘锦大米5KG(包装更新，新老包装随机发</view>
+                <view class='item-text'>数量：1件</view>
+                <view class='text-right'>
+                  <text class='desc'>该商品已超过售后期</text>
+                </view>
+              </view>
+            </view>
+          </view>
+
+        </view>
+        <view class='card-footer'>下单时间：2018-01-08 12:08:15</view>
+      </view>
+
+      <view class='card card-flush'>
+        <view class='card-header'>
+          <view>订单编号：123456789012345</view>
+        </view>
+        <view class='card-content'>
+          <view class='list-block'>
+            <view class='media item-content'>
+              <view class='item-media'>
+                <image mode='aspectFill' src='https://img12.360buyimg.com/n7/jfs/t14167/221/329580004/62693/e01692ab/5a091d03N54e77227.jpg' class='thumb'></image>
+              </view>
+              <view class='item-inner'>
+                <view class='item-title'>金龙鱼 食用油 非转基因 压榨 一级 纯正玉米油4L 四月花开，买桶好</view>
+                <view class='item-text'>数量：1件</view>
+                <view class='text-right'>
+                  <button type='default' class='zan-btn zan-btn--mini zan-btn--plain'>查看申请进度</button>
+                </view>
+              </view>
+            </view>
+            <view class='media item-content'>
+              <view class='item-media'>
+                <image mode='aspectFill' src='https://img11.360buyimg.com/n7/jfs/t9472/35/1798335203/45281/1dc5e9b/59bf20ceN2f8fd55f.jpg' class='thumb'></image>
+              </view>
+              <view class='item-inner'>
+                <view class='item-title'>金龙鱼 东北大米 蟹稻共生 盘锦大米5KG(包装更新，新老包装随机发</view>
+                <view class='item-text'>数量：1件</view>
+                <view class='text-right'>
+                  <text class='desc'>该商品已申请售后</text>
+                </view>
+              </view>
+            </view>
+          </view>
+
+        </view>
+        <view class='card-footer'>下单时间：2018-01-08 12:08:15</view>
+      </view>
+    </view>
+  </view>
+  <!--history  -->
+  <view hidden="{{tab1.selectedId != 'history'}}">
+    <view class='py-3'>
+      <view class='card card-flush'>
+        <view class='card-header'>
+          <text>服务单号：123456789012345</text>
+          <text>换货</text>
+        </view>
+        <view class='card-content'>
+          <view class='media item-content'>
+            <view class='item-media'>
+              <image mode='aspectFill' src='https://img11.360buyimg.com/n7/jfs/t9472/35/1798335203/45281/1dc5e9b/59bf20ceN2f8fd55f.jpg' class='thumb'></image>
+            </view>
+            <view class='item-inner'>
+              <view class='item-title'>金龙鱼 东北大米 蟹稻共生 盘锦大米5KG(包装更新，新老包装随机发</view>
+            </view>
+          </view>
+        </view>
+        <view class='card-footer'>
+          <view class='link'>
+            <text class='zan-icon zan-icon-clock'></text> 申请中</view>
+          <navigator url='/pages/my/myReturnDetail/index' class='link item-link'>请耐心等候审核</navigator>
+        </view>
+      </view>
+      <view class='card card-flush'>
+        <view class='card-header'>
+          <text>服务单号：123456789012345</text>
+          <text>换货</text>
+        </view>
+        <view class='card-content'>
+          <view class='media item-content'>
+            <view class='item-media'>
+              <image mode='aspectFill' src='https://img11.360buyimg.com/n7/jfs/t9472/35/1798335203/45281/1dc5e9b/59bf20ceN2f8fd55f.jpg' class='thumb'></image>
+            </view>
+            <view class='item-inner'>
+              <view class='item-title'>金龙鱼 东北大米 蟹稻共生 盘锦大米5KG(包装更新，新老包装随机发</view>
+            </view>
+          </view>
+        </view>
+        <view class='card-footer'>
+          <view class='link text-success'>
+            <text class='zan-icon zan-icon-passed'></text> 已完成</view>
+          <navigator url='/pages/my/myReturnDetail/index' class='link item-link'>您的审核不通过</navigator>
+        </view>
+      </view>
+      <view class='card card-flush'>
+        <view class='card-header'>
+          <text>服务单号：123456789012345</text>
+          <text>换货</text>
+        </view>
+        <view class='card-content'>
+          <view class='media item-content'>
+            <view class='item-media'>
+              <image mode='aspectFill' src='https://img11.360buyimg.com/n7/jfs/t9472/35/1798335203/45281/1dc5e9b/59bf20ceN2f8fd55f.jpg' class='thumb'></image>
+            </view>
+            <view class='item-inner'>
+              <view class='item-title'>金龙鱼 东北大米 蟹稻共生 盘锦大米5KG(包装更新，新老包装随机发</view>
+            </view>
+          </view>
+        </view>
+        <view class='card-footer'>
+          <view class='link text-success'>
+            <text class='zan-icon zan-icon-passed'></text> 已完成</view>
+          <navigator url='/pages/my/myReturnDetail/index' class='link item-link'>您的服务单已取消</navigator>
+        </view>
+      </view>
+      <view class='card card-flush'>
+        <view class='card-header'>
+          <text>服务单号：123456789012345</text>
+          <text>换货</text>
+        </view>
+        <view class='card-content'>
+          <view class='media item-content'>
+            <view class='item-media'>
+              <image mode='aspectFill' src='https://img11.360buyimg.com/n7/jfs/t9472/35/1798335203/45281/1dc5e9b/59bf20ceN2f8fd55f.jpg' class='thumb'></image>
+            </view>
+            <view class='item-inner'>
+              <view class='item-title'>金龙鱼 东北大米 蟹稻共生 盘锦大米5KG(包装更新，新老包装随机发</view>
+            </view>
+          </view>
+        </view>
+        <view class='card-footer'>
+          <view class='link text-success'>
+            <text class='zan-icon zan-icon-passed'></text> 已完成</view>
+          <navigator url='/pages/my/myReturnDetail/index' class='link item-link'>您的服务单商品已收到</navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

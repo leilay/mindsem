@@ -1,0 +1,35 @@
+<!--pages/my/myAddress/index.wxml-->
+<view class='footer'>
+    <button class='zan-btn zan-btn--primary' bindtap='gotoEdit'>+ 添加地址</button>
+</view>
+<view class='container'>
+  <radio-group class="radio-group" bindchange="radioChange">
+    <block wx:for="{{addrList}}">
+      <view class='card card-flush'>
+        <view class='card-content'>
+          <navigator url='/pages/my/myAddressEdit/index' class='item-content media'>
+            <view class='item-inner item-link'>
+              <view class='item-title'>{{item.name}}
+                <text class='ml-3'>{{item.phone}}</text>
+              </view>
+              <view class='item-text line2'>{{item.content}}</view>
+            </view>
+          </navigator>
+        </view>
+        <view class='card-footer'>
+          <label>
+            <radio value="{{item.value}}" checked="{{item.checked}}" />
+            <icon type="circle" size="16" class='pr-2' wx:if="{{!item.checked}}"></icon>
+            <icon type="success" size="16" class='pr-2' wx:if="{{item.checked}}"></icon>
+            <text>{{item.checked?'默认地址':'设为默认'}}</text>
+          </label>
+          <view class='flexbox'>
+            <button size='mini' class='zan-btn'>编辑</button>
+            <button size='mini' class='zan-btn zan-btn--danger ml-2'>删除</button>
+          </view>
+        </view>
+      </view>
+    </block>
+  </radio-group>
+
+</view>

@@ -1,0 +1,17 @@
+<!--pages/my/myOrderLogistics/index.wxml-->
+
+<import src="/assets/plugin/zanui/steps/index" />
+
+<view class='container'>
+  <view class='card card-flush'>
+    <view class='content-block'>
+      <view>运单号：123456789012345</view>
+      <view>物流公司：申通快递</view>
+      <view>服务电话：95543</view>
+    </view>
+  </view>
+
+  <view class='zan-panel px-3'>
+    <template is="zan-steps" data="{{ type: 'vertical', hasDesc: true, steps }}"></template>
+  </view>
+</view>

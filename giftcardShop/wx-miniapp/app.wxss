@@ -5,8 +5,56 @@
 
 /**app.wxss**/
 
+.link-text {
+  display: inline-block;
+}
+
+.zan-tab {
+  top: 0;
+  z-index: 9;
+  position: sticky;
+  background-color: #fff;
+}
+
 .panel {
   background-color: #fff;
+}
+
+.zan-btn--primary {
+  background-color: #d00;
+}
+
+.zan-btn--primary::after {
+  border-color: #d00;
+}
+
+.zan-btn--primary.zan-btn--plain {
+  color: #d00;
+}
+
+/* === button colors === */
+
+button[type='primary'], .button-hover[type="primary"],
+button[disabled][type="primary"], .a-button-primary, .button-primary {
+  background-color: #d00;
+  border-color: #d00;
+  color: #fff;
+}
+
+button[disabled][type="warn"], .a-button-warn, .button-warn {
+  background-color: #f90;
+  border-color: #f90;
+  color: #fff;
+}
+
+button[disabled][type="primary"] {
+  -webkit-filter: grayscale(87%);
+}
+
+button[type="primary"][plain] {
+  color: #d00;
+  border: 1px solid #d00;
+  background-color: transparent;
 }
 
 .popup-example--bottom .zan-popup__container {
@@ -14,7 +62,7 @@
   right: 0;
 }
 
-/* .banner-card */s
+/* .banner-card */
 
 .banner-card .item-content {
   width: 60%;
@@ -39,7 +87,6 @@
 
 .footer {
   background-color: #fff;
-  min-height: 45px;
 }
 
 .footer+.container {
@@ -59,4 +106,8 @@
 
 .zan-cell__hd {
   padding-right: 16rpx;
+}
+
+.zan-btn {
+  margin-bottom: 0;
 }

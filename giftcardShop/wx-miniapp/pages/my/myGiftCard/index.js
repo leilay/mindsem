@@ -17,10 +17,10 @@ Page(extend({}, Tab, {
         title: '可兑换'
       }, {
         id: 'tosend',
-        title: '已赠送'
+        title: '已兑换'
       }, {
         id: 'send',
-        title: '已收礼'
+        title: '已过期'
       }],
       selectedId: 'all'
     },

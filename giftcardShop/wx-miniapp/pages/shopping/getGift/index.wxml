@@ -12,7 +12,7 @@
       </view>
 
       <view class='content-block'>
-        <button class='zan-btn zan-btn--primary'>立即领取</button>
+        <button class='zan-btn zan-btn--primary' bindtap='gotoNext'>立即领取</button>
       </view>
 
     </view>

@@ -1,5 +1,9 @@
 /* pages/my/myOrderList/index.wxss */
 
+.container {
+  padding-bottom: 128rpx;
+}
+
 .thumb-sm {
   width: 128rpx;
   height: 128rpx;

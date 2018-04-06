@@ -1,5 +1,9 @@
 /* pages/my/myGiftCard/index.wxss */
 
+.container {
+  padding-bottom: 64rpx;
+}
+
 .card-header-pic {
   height: 240rpx;
   background-color: #d00;
@@ -7,4 +11,8 @@
 
 .content-block {
   margin-bottom: 160rpx;
+}
+
+.closed .card-header-pic {
+  background-color: #ccc;
 }

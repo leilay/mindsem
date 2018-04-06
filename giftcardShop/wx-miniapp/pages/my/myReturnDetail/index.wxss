@@ -1,0 +1,11 @@
+/* pages/my/myReturnDetail/index.wxss */
+
+.grid image {
+  background-color: #ccc;
+}
+
+.zan-steps::after {
+  content: " ";
+  display: block;
+  clear: both;
+}

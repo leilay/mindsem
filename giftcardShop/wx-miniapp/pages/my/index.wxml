@@ -3,8 +3,8 @@
 <template is="zan-tab" data="{{ tab: { list, selectedId, scroll, height }, componentId: 'tab1' }}"></template>
 <view class='container'>
 
-  <view class='banner text-center py-3'>
-    <view class='user-info'>
+  <view class='banner py-3'>
+    <view class='user-info text-center' bindtap='getUserinfoAgain'>
       <view class='user-avatar'>
         <image src='http://www.qqzhi.com/uploadpic/2014-05-14/051120936.jpg' class='thumb rounded-circle'></image>
       </view>
@@ -12,6 +12,24 @@
     </view>
   </view>
 
+  <!-- <view class='flexbox app-list text-center'>
+    <navigator class='item' url=''>
+      <view class='zan-icon zan-icon-tosend display-4'></view>
+      <view class='item-title'>待收货</view>
+    </navigator>
+    <navigator class='item' url=''>
+      <view class='zan-icon zan-icon-tosend display-4'></view>
+      <view class='item-title'></view>
+    </navigator>
+    <navigator class='item' url=''>
+      <view class='zan-icon zan-icon-tosend display-4'></view>
+      <view class='item-title'>待收货</view>
+    </navigator>
+    <navigator class='item' url=''>
+      <view class='zan-icon zan-icon-tosend display-4'></view>
+      <view class='item-title'>待收货</view>
+    </navigator>
+  </view> -->
   <view class='zan-panel'>
 
     <navigator url='/pages/my/myGiftCard/index' class="zan-cell zan-cell--access">
@@ -32,6 +50,14 @@
       <view class="zan-cell__ft"></view>
     </navigator>
 
+    <navigator url='/pages/my/myReturn/index' class="zan-cell zan-cell--access">
+      <view class="zan-cell__hd">
+        <text class='zan-icon zan-icon-gold-coin'></text>
+      </view>
+      <view class="zan-cell__bd">退货／售后</view>
+      <view class="zan-cell__ft"></view>
+    </navigator>
+
     <navigator url='/pages/my/myGiftOrderList/index' class="zan-cell zan-cell--access">
       <view class="zan-cell__hd">
         <text class='zan-icon zan-icon-gold-coin'></text>
@@ -40,25 +66,25 @@
       <view class="zan-cell__ft"></view>
     </navigator>
 
-    <view class="zan-cell">
+    <navigator url='/pages/my/myAddress/index' class="zan-cell zan-cell--access">
       <view class="zan-cell__hd">
         <text class='zan-icon zan-icon-location'></text>
       </view>
       <view class="zan-cell__bd">我的地址</view>
       <view class="zan-cell__ft"></view>
-    </view>
+    </navigator>
 
   </view>
 
   <view class='zan-panel'>
 
-    <view class="zan-cell">
+    <navigator url='/pages/common/help/index' class="zan-cell zan-cell--access">
       <view class="zan-cell__hd">
         <text class='zan-icon zan-icon-question'></text>
       </view>
       <view class="zan-cell__bd">常见问题</view>
       <view class="zan-cell__ft"></view>
-    </view>
+    </navigator>
 
     <view bindtap='makePhoneCall' class="zan-cell zan-cell--access">
       <view class="zan-cell__hd">

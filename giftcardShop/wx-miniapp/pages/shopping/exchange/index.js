@@ -62,6 +62,22 @@ Page(Object.assign({}, Zan.SelectCard, {
       [`checked.${componentId}`]: value
     });
   },
+
+  gotoNext:function (){
+    wx.showModal({
+      title: '微信支付',
+      content: '确认是否兑换，是跳转下一页，否留在当前页。',
+      success: function (res) {
+        if (res.confirm) {
+          wx.navigateTo({
+            url: '/pages/shopping/exchangeSuccess/index',
+          })
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
