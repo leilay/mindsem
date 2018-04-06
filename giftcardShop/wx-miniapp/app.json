@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/shopping/getGiftByCode/index",
     "pages/index/index",
+    "pages/shopping/getGiftByCode/index",
     "pages/shopping/giftCard/index",
     "pages/shopping/getGiftByPhone/index",
     "pages/my/myGiftCard/index",

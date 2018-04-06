@@ -20,6 +20,10 @@
   font-size: 40rpx;
 }
 
+.footer>button:first-child:last-child {
+  border-radius: 0;
+}
+
 .panel {
   background-color: #fff;
 }

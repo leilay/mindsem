@@ -8,20 +8,26 @@
         </view>
         <view class='input-wrapper'>
           <input placeholder='输入兑换码'></input>
+          <view class='icon icon-scan' bindtap='toScan'>
+            <image mode='widthFix' src='/assets/img/ui/icon-scan.png'></image>
+          </view>
         </view>
+        <button class='zan-btn zan-btn--primary' bindtap='gotoNext'>立即校验</button>
+        <view class='caption mt-3'>输入卡号，您可以选择绑定到我的礼品卡，或者立即兑换</view>
 
-        <button class='zan-btn zan-btn--primary'>立即兑换</button>
+        <view class='card-sample'></view>
       </view>
     </view>
 
     <view class='py-4 text-white'>
       <view class='item-title'>使用说明</view>
-
-      <view class='p'>1、这里是使用说明文本第一段；</view>
-      <view class='p'>2、这里是使用说明文本第二段；</view>
-      <view class='p'>3、这里是使用说明文本第三段；</view>
-      <view class='p'>4、这里是使用说明文本第四段；</view>
-      <view class='p'>5、这里是使用说明文本第五段；</view>
+      <view class='article'>
+        <view class='p'>1、这里是使用说明文本第一段；</view>
+        <view class='p'>2、这里是使用说明文本第二段，这里是使用说明文本第二段；</view>
+        <view class='p'>3、这里是使用说明文本第三段，这里是使用说明文本第三段，这里是使用说明文本第三段；</view>
+        <view class='p'>4、这里是使用说明文本第四段，这里是使用说明文本第四段；</view>
+        <view class='p'>5、这里是使用说明文本第五段；</view>
+      </view>
     </view>
 
   </view>

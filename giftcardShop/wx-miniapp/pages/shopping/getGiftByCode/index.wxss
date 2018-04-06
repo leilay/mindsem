@@ -6,16 +6,34 @@ page {
 
 .input-wrapper {
   padding-bottom: 24rpx;
+  position: relative;
 }
 
 .input-wrapper input {
   border: 1px solid #ddd;
   border-radius: 8rpx;
-  padding: 24rpx;
+  padding: 16rpx 24rpx;
+}
+
+.icon-scan {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 16rpx;
+  width: 56rpx;
+  z-index: 5;
 }
 
 .title {
   text-align: center;
   font-size: 64rpx;
   margin-bottom: 48rpx;
+}
+
+.card-sample {
+  height: 45vw;
+  background-color: #333;
+  margin-top: 48rpx;
+  color: #fff;
+  border-radius: 16rpx;
 }
