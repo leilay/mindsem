@@ -1,0 +1,12 @@
+/* pages/shopping/giftCard/index.wxss */
+
+.item-title {
+  color: #d00;
+}
+
+.banner {
+  background-color: #d00;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}

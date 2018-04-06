@@ -1,0 +1,26 @@
+/* pages/shopping/getGiftByPhone/index.wxss */
+
+page {
+  background-color: #d00;
+}
+
+.banner image {
+  height: 61.8vw;
+}
+
+.input-wrapper {
+  position: relative;
+  padding-bottom: 24rpx;
+}
+
+input {
+  border: 1px solid #ddd;
+  padding: 0 16rpx;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+}
+
+.btn-verify {
+}

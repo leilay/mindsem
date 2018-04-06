@@ -1,0 +1,64 @@
+<!--pages/shopping/giftCard/index.wxml-->
+<view class='container'>
+
+  <view class='banner'>
+    <view class='app-list flexbox text-center'>
+      <navigator class='item' url='/pages/shopping/getGiftByCode/index'>
+        <view class='zan-icon zan-icon-credit-pay display-3'></view>
+        <view class='mt-2'>卡密兑换</view>
+      </navigator>
+      <navigator class='item' url='/pages/shopping/getGiftByPhone/index'>
+        <view class='zan-icon zan-icon-other-pay display-3'></view>
+        <view class='mt-2'>手机领取</view>
+      </navigator>
+      <navigator class='item' url='/pages/my/myGiftCard/index'>
+        <view class='zan-icon zan-icon-receive-gift display-3'></view>
+        <view class='mt-2'>使用礼品卡</view>
+      </navigator>
+    </view>
+  </view>
+
+  <view class='section'>
+    <view class='section-title'>
+      <view class='section-content'>
+        <view class='title'>最近领取</view>
+        <view class='caption'></view>
+      </view>
+    </view>
+
+    <view class='list-block my-3'>
+      <view class='item-content media'>
+        <view class='item-media'>
+          <image mode='widthFix' src='https://m.360buyimg.com/babel/jfs/t17782/328/1321086588/99230/2c6ce95a/5ac480d4N8d778eca.jpg' class='thumb'></image>
+        </view>
+        <view class='item-inner item-link'>
+          <view class='item-title'>领取［金龙鱼礼品卡银卡］</view>
+          <view class='item-text'>这里描述一下具体的情况，但也不能太具体。</view>
+          <view class='caption'>2018-08-12</view>
+        </view>
+      </view>
+      <view class='item-content media'>
+        <view class='item-media'>
+          <image mode='widthFix' src='https://m.360buyimg.com/babel/jfs/t17005/284/1274278528/74805/1f3fe81f/5ac4398eNbd564420.jpg' class='thumb'></image>
+        </view>
+        <view class='item-inner item-link'>
+          <view class='item-title'>领取［金龙鱼礼品卡银卡］</view>
+          <view class='item-text'>这里描述一下具体的情况，但也不能太具体。</view>
+          <view class='caption'>2018-08-12</view>
+        </view>
+      </view>
+      <view class='item-content media'>
+        <view class='item-media'>
+          <image mode='widthFix' src='https://m.360buyimg.com/babel/jfs/t17086/263/1143652137/61719/c79dd8cf/5abde080Nb4ed89b6.jpg' class='thumb'></image>
+        </view>
+        <view class='item-inner item-link'>
+          <view class='item-title'>领取［金龙鱼礼品卡银卡］</view>
+          <view class='item-text'>这里描述一下具体的情况，但也不能太具体。</view>
+          <view class='caption'>2018-08-12</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+</view>

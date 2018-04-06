@@ -1,6 +1,9 @@
 {
   "pages": [
+    "pages/shopping/getGiftByCode/index",
     "pages/index/index",
+    "pages/shopping/giftCard/index",
+    "pages/shopping/getGiftByPhone/index",
     "pages/my/myGiftCard/index",
     "pages/my/myReturn/index",
     "pages/my/myReturnDetail/index",
@@ -42,6 +45,12 @@
         "text": "有礼",
         "iconPath": "assets/img/app.icon/icon-gift.png",
         "selectedIconPath": "assets/img/app.icon/icon-gift-active.png"
+      },
+      {
+        "pagePath": "pages/shopping/giftCard/index",
+        "text": "兑换",
+        "iconPath": "assets/img/app.icon/icon-cart.png",
+        "selectedIconPath": "assets/img/app.icon/icon-cart-active.png"
       },
       {
         "pagePath": "pages/my/index",

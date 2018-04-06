@@ -1,0 +1,29 @@
+<!--pages/shopping/getGiftByCode/index.wxml-->
+<view class='container'>
+  <view class='content-block'>
+    <view class='card'>
+      <view class='content-block'>
+        <view class='title'>
+          金龙鱼电子礼品卡
+        </view>
+        <view class='input-wrapper'>
+          <input placeholder='输入兑换码'></input>
+        </view>
+
+        <button class='zan-btn zan-btn--primary'>立即兑换</button>
+      </view>
+    </view>
+
+    <view class='py-4 text-white'>
+      <view class='item-title'>使用说明</view>
+
+      <view class='p'>1、这里是使用说明文本第一段；</view>
+      <view class='p'>2、这里是使用说明文本第二段；</view>
+      <view class='p'>3、这里是使用说明文本第三段；</view>
+      <view class='p'>4、这里是使用说明文本第四段；</view>
+      <view class='p'>5、这里是使用说明文本第五段；</view>
+    </view>
+
+  </view>
+
+</view>

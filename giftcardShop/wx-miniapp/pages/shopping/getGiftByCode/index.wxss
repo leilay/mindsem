@@ -1,0 +1,21 @@
+/* pages/shopping/getGiftByCode/index.wxss */
+
+page {
+  background-color: #d00;
+}
+
+.input-wrapper {
+  padding-bottom: 24rpx;
+}
+
+.input-wrapper input {
+  border: 1px solid #ddd;
+  border-radius: 8rpx;
+  padding: 24rpx;
+}
+
+.title {
+  text-align: center;
+  font-size: 64rpx;
+  margin-bottom: 48rpx;
+}
