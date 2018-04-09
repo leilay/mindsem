@@ -1,13 +1,13 @@
 {
   "pages": [
+
     "pages/index/index",
     "pages/my/index",
-    "pages/shopping/getGiftByPhone/index",
-
 
     "pages/shopping/giftCard/index",
     "pages/shopping/sendGift/index",
     "pages/shopping/getGiftByCode/index",
+    "pages/shopping/getGiftByPhone/index",
 
     "pages/my/myCanGiveFriend/index",
     "pages/my/myGiftCard/index",
