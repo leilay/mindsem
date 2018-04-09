@@ -1,0 +1,43 @@
+<!--pages/my/myPayRecord/index.wxml-->
+<view class='container'>
+  <view class='list-block'>
+
+    <navigator class='item-content' url='/pages/my/myGiftOrderDetail/index'>
+      <view class='item-inner item-link'>
+        <view>
+          <view class='item-title'>购买礼品卡</view>
+          <view class='caption'>2018-04-09 09:21:13</view>
+        </view>
+        <view class='display-4 text-danger'>-131.00</view>
+      </view>
+    </navigator>
+    <navigator class='item-content' url='/pages/my/myGiftOrderDetail/index'>
+      <view class='item-inner item-link'>
+        <view>
+          <view class='item-title'>购买礼品卡</view>
+          <view class='caption'>2018-04-09 09:21:13</view>
+        </view>
+        <view class='display-4 text-danger'>-57.00</view>
+      </view>
+    </navigator>
+    <navigator class='item-content' url='/pages/my/myGiftOrderDetail/index'>
+      <view class='item-inner item-link'>
+        <view>
+          <view class='item-title'>购买礼品卡</view>
+          <view class='caption'>2018-04-09 09:21:13</view>
+        </view>
+        <view class='display-4 text-success'>+131.00</view>
+      </view>
+    </navigator>
+    <navigator class='item-content' url='/pages/my/myGiftOrderDetail/index'>
+      <view class='item-inner item-link'>
+        <view>
+          <view class='item-title'>购买礼品卡</view>
+          <view class='caption'>2018-04-09 09:21:13</view>
+        </view>
+        <view class='display-4 text-danger'>-60.00</view>
+      </view>
+    </navigator>
+
+  </view>
+</view>

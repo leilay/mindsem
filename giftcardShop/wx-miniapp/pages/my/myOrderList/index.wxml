@@ -96,7 +96,7 @@
         <view></view>
         <view>
           <button size='mini' type='default' bindtap='gotoLogistics'>查看物流</button>
-          <button size='mini' type='primary' bindtap='confirmOrder'>确认收货</button>
+          <!-- <button size='mini' type='primary' bindtap='confirmOrder'>确认收货</button> -->
         </view>
       </view>
     </view>
@@ -130,13 +130,13 @@
         </view>
       </view>
 
-      <view class='card-footer'>
+      <!-- <view class='card-footer'>
         <view></view>
         <view>
           <button size='mini' type='default'>申请售后</button>
-          <!-- <button size='mini' type='primary'>晒单评价</button> -->
+           <button size='mini' type='primary'>晒单评价</button> 
         </view>
-      </view>
+      </view> -->
     </view>
     <view class='card card-flush'>
       <view class='card-header'>

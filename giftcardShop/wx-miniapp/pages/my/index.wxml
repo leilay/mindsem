@@ -12,25 +12,23 @@
     </view>
   </view>
 
-  <!-- <view class='flexbox app-list text-center'>
-    <navigator class='item' url=''>
-      <view class='zan-icon zan-icon-tosend display-4'></view>
-      <view class='item-title'>待收货</view>
+  <view class='flexbox app-list text-center'>
+    <navigator class='item' url='/pages/my/myOrderList/index'>
+      <view class='zan-icon zan-icon-records display-4'></view>
+      <view class='mt-2'>全部订单</view>
     </navigator>
-    <navigator class='item' url=''>
-      <view class='zan-icon zan-icon-tosend display-4'></view>
-      <view class='item-title'></view>
+    <navigator class='item' url='/pages/my/myOrderList/index'>
+      <view class='zan-icon zan-icon-tosend display-4 zan-badge'>
+        <view class='zan-badge__count'>99+</view>
+      </view>
+      <view class='mt-2'>待收货</view>
     </navigator>
-    <navigator class='item' url=''>
-      <view class='zan-icon zan-icon-tosend display-4'></view>
-      <view class='item-title'>待收货</view>
+    <navigator class='item' url='/pages/my/myOrderList/index'>
+      <view class='zan-icon zan-icon-completed display-4'></view>
+      <view class='mt-2'>已完成</view>
     </navigator>
-    <navigator class='item' url=''>
-      <view class='zan-icon zan-icon-tosend display-4'></view>
-      <view class='item-title'>待收货</view>
-    </navigator>
-  </view> -->
-  <view class='zan-panel'>
+  </view>
+  <!-- <view class='zan-panel'>
 
     <navigator url='/pages/my/myGiftCard/index' class="zan-cell zan-cell--access">
       <view class="zan-cell__hd">
@@ -39,30 +37,30 @@
       <view class="zan-cell__bd">我的礼品卡</view>
       <view class="zan-cell__ft"></view>
     </navigator>
-  </view>
+  </view> -->
 
   <view class='zan-panel'>
-    <navigator url='/pages/my/myOrderList/index' class="zan-cell zan-cell--access">
+    <!-- <navigator url='/pages/my/myOrderList/index' class="zan-cell zan-cell--access">
       <view class="zan-cell__hd">
         <text class='zan-icon zan-icon-records'></text>
       </view>
-      <view class="zan-cell__bd">兑换订单</view>
+      <view class="zan-cell__bd">我的订单</view>
       <view class="zan-cell__ft"></view>
-    </navigator>
+    </navigator> -->
 
-    <navigator url='/pages/my/myReturn/index' class="zan-cell zan-cell--access">
+    <!-- <navigator url='/pages/my/myReturn/index' class="zan-cell zan-cell--access">
       <view class="zan-cell__hd">
         <text class='zan-icon zan-icon-gold-coin'></text>
       </view>
       <view class="zan-cell__bd">退货／售后</view>
       <view class="zan-cell__ft"></view>
-    </navigator>
+    </navigator> -->
 
-    <navigator url='/pages/my/myGiftOrderList/index' class="zan-cell zan-cell--access">
+    <navigator url='/pages/my/myPayRecord/index' class="zan-cell zan-cell--access">
       <view class="zan-cell__hd">
         <text class='zan-icon zan-icon-gold-coin'></text>
       </view>
-      <view class="zan-cell__bd">购买记录</view>
+      <view class="zan-cell__bd">交易记录</view>
       <view class="zan-cell__ft"></view>
     </navigator>
 

@@ -1,0 +1,14 @@
+/* pages/shopping/sendGift/index.wxss */
+
+.btn-bottom {
+  position: fixed;
+  left: 25%;
+  bottom: 24rpx;
+  width: 50%;
+  height: 96rpx;
+  line-height: 96rpx;
+  border-radius: 96rpx;
+  text-align: center;
+  background-color: #d00;
+  color: #fff;
+}

@@ -1,6 +1,11 @@
 <!--pages/my/myGiftOrderList/index.wxml-->
 
+<import src="/assets/plugin/zanui/tab/index" />
+
 <view class='container'>
+
+  <template is="zan-tab" data="{{ ...tab1, componentId: 'tab1' }}"></template>
+  
   <view class='zan-panel'>
 
     <view class='media'>

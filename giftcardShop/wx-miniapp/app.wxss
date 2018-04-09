@@ -20,8 +20,16 @@
   font-size: 40rpx;
 }
 
-.footer>button:first-child:last-child {
+.footer>button:first-child:last-child,
+.footer .flexbox>button.item,
+.footer .flexbox>.item>button {
   border-radius: 0;
+}
+
+.footer>button:first-child:last-child::after,
+.footer .flexbox>button.item::after,
+.footer .flexbox>.item>button::after {
+  display: none;
 }
 
 .panel {

@@ -1,64 +1,135 @@
 <!--pages/shopping/giftCard/index.wxml-->
 <view class='container'>
 
-  <view class='banner'>
-    <view class='app-list flexbox text-center'>
-      <navigator class='item' url='/pages/shopping/getGiftByCode/index'>
-        <view class='zan-icon zan-icon-credit-pay display-3'></view>
-        <view class='mt-2'>卡密兑换</view>
-      </navigator>
-      <navigator class='item' url='/pages/shopping/getGiftByPhone/index'>
-        <view class='zan-icon zan-icon-other-pay display-3'></view>
-        <view class='mt-2'>手机领取</view>
+  <view class='banner text-center pt-3'>
+    <navigator class='' url='/pages/my/myGiftCard/index'>
+      <view class='display-1'>21</view>
+      <view class='small caption'>我的礼品卡</view>
+    </navigator>
+    <view class='app-list flexbox'>
+      <navigator class='item' url='/pages/my/myGiftCard/index'>
+        <view class='display-4'>13</view>
+        <view class='mt-2 small caption'>可兑换</view>
       </navigator>
       <navigator class='item' url='/pages/my/myGiftCard/index'>
-        <view class='zan-icon zan-icon-receive-gift display-3'></view>
-        <view class='mt-2'>使用礼品卡</view>
+        <view class='display-4'>8</view>
+        <view class='mt-2 small caption'>已兑换</view>
+      </navigator>
+      <navigator class='item' url='/pages/my/myGiftCard/index'>
+        <view class='display-4'>0</view>
+        <view class='mt-2 small caption'>已过期</view>
       </navigator>
     </view>
   </view>
 
-  <view class='section'>
-    <view class='section-title'>
-      <view class='section-content'>
-        <view class='title'>最近领取</view>
-        <view class='caption'></view>
+  <view class='card card-flush'>
+    <!-- <view class='grid app-list py-2'>
+      <view class='col-3 app-item'>
+        <view class='app-icon'>
+          <view class='zan-icon zan-icon-sign display-4'></view>
+        </view>
+        <view class='app-name'>扫一扫</view>
       </view>
-    </view>
+      <view class='col-3 app-item'>
+        <view class='app-icon'>
+          <view class='zan-icon zan-icon-sign display-4'></view>
+        </view>
+        <view class='app-name'>绑卡</view>
+      </view>
+      <view class='col-3 app-item'>
+        <view class='app-icon'>
+          <view class='zan-icon zan-icon-exchange-record display-4'></view>
+        </view>
+        <view class='app-name'>兑换</view>
+      </view>
+      <view class='col-3 app-item'>
+        <view class='app-icon'>
+          <view class='zan-icon zan-icon-question display-4'></view>
+        </view>
+        <view class='app-name'>查一查</view>
+      </view>
+    </view> -->
 
-    <view class='list-block my-3'>
-      <view class='item-content media'>
-        <view class='item-media'>
-          <image mode='widthFix' src='https://m.360buyimg.com/babel/jfs/t17782/328/1321086588/99230/2c6ce95a/5ac480d4N8d778eca.jpg' class='thumb'></image>
-        </view>
-        <view class='item-inner item-link'>
-          <view class='item-title'>领取［金龙鱼礼品卡银卡］</view>
-          <view class='item-text'>这里描述一下具体的情况，但也不能太具体。</view>
-          <view class='caption'>2018-08-12</view>
-        </view>
-      </view>
-      <view class='item-content media'>
-        <view class='item-media'>
-          <image mode='widthFix' src='https://m.360buyimg.com/babel/jfs/t17005/284/1274278528/74805/1f3fe81f/5ac4398eNbd564420.jpg' class='thumb'></image>
-        </view>
-        <view class='item-inner item-link'>
-          <view class='item-title'>领取［金龙鱼礼品卡银卡］</view>
-          <view class='item-text'>这里描述一下具体的情况，但也不能太具体。</view>
-          <view class='caption'>2018-08-12</view>
-        </view>
-      </view>
-      <view class='item-content media'>
-        <view class='item-media'>
-          <image mode='widthFix' src='https://m.360buyimg.com/babel/jfs/t17086/263/1143652137/61719/c79dd8cf/5abde080Nb4ed89b6.jpg' class='thumb'></image>
-        </view>
-        <view class='item-inner item-link'>
-          <view class='item-title'>领取［金龙鱼礼品卡银卡］</view>
-          <view class='item-text'>这里描述一下具体的情况，但也不能太具体。</view>
-          <view class='caption'>2018-08-12</view>
-        </view>
-      </view>
-    </view>
+    <view class='flexbox app-list separate-item'>
 
+      <navigator class='item flexbox' url='/pages/shopping/getGiftByCode/index'>
+        <view class='zan-icon zan-icon-sign display-4 mr-3'></view>
+        <view class=''>
+          <view class='item-title'>绑卡</view>
+          <view class='caption small'>
+            绑定到卡包
+          </view>
+        </view>
+      </navigator>
+
+      <navigator class='item flexbox' url='/pages/shopping/getGiftByCode/index'>
+        <view class='zan-icon zan-icon-exchange-record display-4 mr-3'></view>
+        <view class=''>
+          <view class='item-title'>兑换</view>
+          <view class='caption small'>
+            输入卡密或扫码兑换
+          </view>
+        </view>
+      </navigator>
+    </view>
   </view>
 
+
+  <!-- <view class='section'>
+
+    <view class='list-block'>
+
+      <navigator class='item-content media'>
+        <view class='item-inner item-link'>
+          <view class='item-title'>兑换-金龙鱼礼品卡298银卡</view>
+          <view class='item-text caption'>2018-04-08 17:56</view>
+        </view>
+      </navigator>
+      <navigator class='item-content media'>
+        <view class='item-inner item-link'>
+          <view class='item-title'>绑定-金龙鱼礼品卡298银卡</view>
+          <view class='item-text caption'>2018-04-08 17:56</view>
+        </view>
+      </navigator>
+      <navigator class='item-content media'>
+        <view class='item-inner item-link'>
+          <view class='item-title'>过期-金龙鱼礼品卡298银卡</view>
+          <view class='item-text caption'>2018-04-08 17:56</view>
+        </view>
+      </navigator>
+
+    </view>
+    <view class='text-center py-3'>
+      <navigator class='' url=''>
+        <text class='zan-icon zan-icon-clock'></text> 查看更多记录</navigator>
+    </view>
+  </view> -->
+  <!-- <view class='card card-flush'>
+    <navigator class='card-header item-link' url='/pages/my/myGiftCard/index'>
+      <view class='item-title'>卡</view>
+      <text class='text-danger'>15</text>
+    </navigator>
+    <view class='card-content'>
+      <view class='card-package'>
+
+        <navigator class='item' url='/pages/my/myGiftCardDetail/index'>
+          <view class='card-item' style='background-image:url(https://img30.360buyimg.com/sku/jfs/t9436/32/1755502382/67080/1fcbf25/59bf24fcNc67fc1c4.jpg);'>
+            <view class='item-title'>金龙鱼礼品卡-298银卡</view>
+            <view class='item-after'>2018-10-20</view>
+          </view>
+        </navigator>
+        <navigator class='item' url='/pages/my/myGiftCardDetail/index'>
+          <view class='card-item' style='background-image:url(https://img1.360buyimg.com/pop/jfs/t16834/5/1248430359/89558/6558dc4/5ac46ce3N4990b93c.jpg);'>
+            <view class='item-title'>金龙鱼礼品卡-398金卡</view>
+            <view class='item-after'>2018-10-20</view>
+          </view>
+        </navigator>
+
+      </view>
+
+    </view>
+  </view>
+  <view class='content-block caption'>
+    最多展示三张
+  </view> -->
 </view>

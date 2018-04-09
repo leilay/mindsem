@@ -1,0 +1,24 @@
+<!--pages/my/myCanGiveFriend/index.wxml-->
+<view class='container'>
+  <view class='footer'>
+    <button type='primary' bindtap='gotoEditMyWish'>确定</button>
+  </view>
+  <form>
+    <view class='list-block'>
+      <checkbox-group bindchange="checkboxChange" class='checkbox-group'>
+        <label class="item-content media" wx:for="{{checkboxItems}}" wx:key="value">
+          <checkbox value="{{item.value}}" checked="{{item.checked}}" />
+          <view class='pr-2'>
+            <icon type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+            <icon type="success" size="23" wx:if="{{item.checked}}"></icon>
+          </view>
+          <view class="item-inner">
+            <text class="item-title"> {{item.name}}</text>
+            <view class='caption'>有效期：{{item.date}}</view>
+          </view>
+        </label>
+      </checkbox-group>
+    </view>
+  </form>
+
+</view>

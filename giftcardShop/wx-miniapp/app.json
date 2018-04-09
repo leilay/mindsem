@@ -1,14 +1,21 @@
 {
   "pages": [
+
     "pages/index/index",
-    "pages/shopping/getGiftByCode/index",
+    "pages/my/index",
+
     "pages/shopping/giftCard/index",
+    "pages/shopping/sendGift/index",
+    "pages/shopping/getGiftByCode/index",
     "pages/shopping/getGiftByPhone/index",
+
+    "pages/my/myCanGiveFriend/index",
     "pages/my/myGiftCard/index",
+    "pages/my/myGiftCardDetail/index",
     "pages/my/myReturn/index",
     "pages/my/myReturnDetail/index",
     "pages/my/myReturnEdit/index",
-    "pages/my/index",
+    "pages/my/myPayRecord/index",
 
     "pages/my/myOrderLogistics/index",
     "pages/my/myOrderDetail/index",
@@ -28,7 +35,6 @@
     "pages/shopping/giveMyWishSuccess/index",
 
     "pages/common/help/index",
-
     "pages/logs/logs"
   ],
   "window": {
@@ -42,15 +48,21 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "有礼",
+        "text": "首页",
+        "iconPath": "assets/img/app.icon/icon-home.png",
+        "selectedIconPath": "assets/img/app.icon/icon-home-active.png"
+      },
+      {
+        "pagePath": "pages/shopping/sendGift/index",
+        "text": "送礼",
         "iconPath": "assets/img/app.icon/icon-gift.png",
         "selectedIconPath": "assets/img/app.icon/icon-gift-active.png"
       },
       {
         "pagePath": "pages/shopping/giftCard/index",
-        "text": "兑换",
-        "iconPath": "assets/img/app.icon/icon-cart.png",
-        "selectedIconPath": "assets/img/app.icon/icon-cart-active.png"
+        "text": "卡包",
+        "iconPath": "assets/img/app.icon/icon-card.png",
+        "selectedIconPath": "assets/img/app.icon/icon-card-active.png"
       },
       {
         "pagePath": "pages/my/index",

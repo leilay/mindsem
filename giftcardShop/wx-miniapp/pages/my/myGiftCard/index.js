@@ -41,6 +41,12 @@ Page(extend({}, Tab, {
       showBottomPopup: !this.data.showBottomPopup
     });
   },
+
+  gotoCanGiveFriend: function () {
+    wx.navigateTo({
+      url: '/pages/my/myCanGiveFriend/index',
+    })
+  },
   toScan: function () {
     wx.showToast({
       title: '扫一扫',

@@ -1624,7 +1624,7 @@ button.rounded-0::after, .button.rounded-0::after {
   line-height: 1.2;
 }
 
-.separate-item>view::after {
+.separate-item>.item::after {
   content: " ";
   display: block;
   position: absolute;

@@ -11,7 +11,10 @@
 
 <!-- footer -->
 <view class='footer'>
-  <button type='primary' class='zan-btn zan-btn-primary' bindtap="toggleBottomPopup">＋ 绑定礼品卡</button>
+  <view class='flexbox'>
+    <button type='default' class='zan-btn item' bindtap="gotoCanGiveFriend">送礼</button>
+    <button type='primary' class='zan-btn zan-btn-primary item' bindtap="toggleBottomPopup">＋ 绑定礼品卡</button>
+  </view>
 </view>
 
 <!-- container -->
@@ -32,9 +35,9 @@
         </view>
       </view>
       <view class='card-footer'>
-        <!-- <navigator url='' class='link'>再次购买</navigator> -->
-        <navigator url='/pages/shopping/giveMyWish/index' class='link'>送给好友</navigator>
-        <navigator url='/pages/shopping/exchange/index' class='text-danger'>立即兑换</navigator>
+        <navigator url='' class='link'></navigator>
+        <!-- <navigator url='/pages/shopping/giveMyWish/index' class='link'>送给好友</navigator> -->
+        <navigator url='/pages/shopping/exchange/index' class='text-danger link'>立即兑换</navigator>
       </view>
     </view>
 

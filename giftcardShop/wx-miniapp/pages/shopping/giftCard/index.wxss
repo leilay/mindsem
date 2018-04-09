@@ -1,12 +1,39 @@
 /* pages/shopping/giftCard/index.wxss */
 
-.item-title {
-  color: #d00;
+.display-1 {
+  font-weight: lighter;
+  line-height: 1em;
+}
+
+.display-4.zan-icon {
+  color: #666;
 }
 
 .banner {
   background-color: #d00;
   color: #fff;
-  position: sticky;
-  top: 0;
+}
+
+.card-package {
+  padding-bottom: 24rpx;
+}
+
+.card-package .item {
+  padding: 24rpx 48rpx 0;
+  background: -webkit-gradient(linear, 0 50, 0 bottom, from(#fff), to(rgba(0, 0, 0, 0.1)));
+}
+
+.card-item {
+  background-color: #333;
+  background-size: cover;
+  color: #fff;
+  padding: 24rpx;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+  display: flex;
+  height: 128rpx;
+}
+
+.card-item .item-after {
+  opacity: 0.54;
 }

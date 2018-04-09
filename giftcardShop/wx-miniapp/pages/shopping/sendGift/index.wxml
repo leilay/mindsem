@@ -1,0 +1,29 @@
+<!--pages/shopping/sendGift/index.wxml-->
+<view class='container'>
+  <view class='banner'>
+    <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523185621666&di=f961ec29e9d9430ccf5c259b923814cf&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01fe43578c981f0000012e7e301390.jpg'></image>
+  </view>
+  <view class='bg-white text-center'>
+    <view class='app-list flexbox'>
+      <navigator class='item' url='/pages/my/myGiftOrderList/index'>
+        <view class='display-4 text-danger'>13</view>
+        <view class='mt-2 small caption'>已送礼</view>
+      </navigator>
+      <navigator class='item' url='/pages/my/myGiftOrderList/index'>
+        <view class='display-4 text-danger'>8</view>
+        <view class='mt-2 small caption'>已收礼</view>
+      </navigator>
+      <navigator class='item' url='/pages/my/myGiftOrderList/index'>
+        <view class='display-4 text-danger'>0</view>
+        <view class='mt-2 small caption'>待领取</view>
+      </navigator>
+    </view>
+  </view>
+
+  <view class='section text-center'>
+    <view class='py-5 caption'>您最近没有送礼哦</view>
+  </view>
+  <navigator class='btn-bottom' url='/pages/my/myCanGiveFriend/index'>
+    我要送礼
+  </navigator>
+</view>
