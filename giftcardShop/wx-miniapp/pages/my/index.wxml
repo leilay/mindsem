@@ -28,15 +28,16 @@
       <view class='mt-2'>已完成</view>
     </navigator>
   </view>
-   <view class='zan-panel'>
-    <navigator url='/pages/shopping/getGiftByPhone/index' class="zan-cell zan-cell--access">
+  <!-- <view class='zan-panel'>
+
+    <navigator url='/pages/my/myGiftCard/index' class="zan-cell zan-cell--access">
       <view class="zan-cell__hd">
-        <text class='zan-icon zan-icon-phone'></text>
+        <text class='zan-icon zan-icon-point-gift'></text>
       </view>
-      <view class="zan-cell__bd">手机领取</view>
-      <view class="zan-cell__ft">验证手机，领取礼品卡</view>
+      <view class="zan-cell__bd">我的礼品卡</view>
+      <view class="zan-cell__ft"></view>
     </navigator>
-  </view> 
+  </view> -->
 
   <view class='zan-panel'>
     <!-- <navigator url='/pages/my/myOrderList/index' class="zan-cell zan-cell--access">
