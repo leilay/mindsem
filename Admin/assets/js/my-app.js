@@ -82,6 +82,7 @@ new Vue({
 				desc: '',
 				loginTime: '2018-04-13 13:24'
 			}],
+			activeName: 'tab1',
 			//	role
 			roleData: [{
 				id: '0',
@@ -108,6 +109,95 @@ new Vue({
 				desc: '',
 				time: '2018-04-13 13:24'
 			}],
+
+			roleList: [{
+				label: '管理员',
+				children: [{
+					label: 'Admin',
+				}]
+			}, {
+				label: '商户号',
+				children: [{
+					label: '商户号0001',
+				}, {
+					label: '商户号002',
+				}]
+			}, ],
+			defaultProps: {
+				children: 'children',
+				label: 'label'
+			},
+			//auth
+			authData: [{
+				id: '0',
+				name: '功能001',
+			}, {
+				id: '1',
+				name: '功能002',
+			}, {
+				id: '2',
+				name: '功能003',
+			}, {
+				id: '3',
+				name: '功能004',
+			}],
+			coopData: [{
+				id: 'coop123456789',
+				nickname: '经销商简称',
+				type: '',
+				status: '可用',
+				phone: '13666667777',
+				desc: '',
+				time: '2018-04-13 13:24'
+			}, {
+				id: 'coop123456789',
+				nickname: '经销商简称',
+				type: '',
+				status: '可用',
+				phone: '13666667777',
+				desc: '',
+				time: '2018-04-13 13:24'
+			}, {
+				id: 'coop123456789',
+				nickname: '经销商简称',
+				type: '',
+				status: '可用',
+				phone: '13666667777',
+				desc: '',
+				time: '2018-04-13 13:24'
+			}, {
+				id: 'coop123456789',
+				nickname: '经销商简称',
+				type: '',
+				status: '可用',
+				phone: '13666667777',
+				desc: '',
+				time: '2018-04-13 13:24'
+			}, {
+				id: 'coop123456789',
+				nickname: '经销商简称',
+				type: '',
+				status: '可用',
+				phone: '13666667777',
+				desc: '',
+				time: '2018-04-13 13:24'
+			}, ],
+
+			cateList: [{
+				label: '品类1',
+				children: [{
+					label: '品类1-1',
+				}]
+			}, {
+				label: '品类2',
+				children: [{
+					label: '品类2-1',
+				}, {
+					label: '品类2-2',
+				}]
+			}, ],
+
+			count: 1,
 		}
 	}
 })

@@ -1,0 +1,39 @@
+<el-container>
+	<el-header class="main-header">
+		<h1 class="page-title">权限</h1>
+	</el-header>
+
+	<el-container class="h-100">
+		<el-aside class="panel-left">
+			<el-tree :data="roleList" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
+		</el-aside>
+		<el-main class="main">
+			角色：Admin
+			<el-tabs v-model="activeName" @tab-click="handleClick">
+				<el-tab-pane label="系统管理" name="tab1">
+					<el-table ref="multipleTable" :data="authData" tooltip-effect="dark" style="width: 100%" @selection-change="handleSelectionChange">
+						<el-table-column type="selection" width="55">
+						</el-table-column>
+						<el-table-column label="功能模块" width="120">
+							<template slot-scope="scope">{{ scope.row.name }}</template>
+						</el-table-column>
+
+						<el-table-column label="权限">
+							<template slot-scope="scope">
+								<el-checkbox-group v-model="checkList">
+									<el-checkbox label="权限 A"></el-checkbox>
+									<el-checkbox label="权限 B"></el-checkbox>
+									<el-checkbox label="权限 C"></el-checkbox>
+								</el-checkbox-group>
+							</template>
+						</el-table-column>
+					</el-table>
+
+				</el-tab-pane>
+				<el-tab-pane label="商铺管理" name="second">商铺管理</el-tab-pane>
+				<el-tab-pane label="商铺报表" name="third">商铺报表</el-tab-pane>
+				<el-tab-pane label="其他" name="fourth">其他</el-tab-pane>
+			</el-tabs>
+		</el-main>
+	</el-container>
+</el-container>

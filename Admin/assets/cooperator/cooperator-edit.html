@@ -1,0 +1,79 @@
+<el-container>
+	<el-header class="main-header">
+		<h1 class="page-title">商户号编辑</h1>
+	</el-header>
+
+	<el-main class="main">
+		<el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
+			<el-col :span="12">
+				<el-form-item label="商户号" prop="name" required>
+					<el-input v-model="ruleForm.name"></el-input>
+				</el-form-item>
+			</el-col>
+			<el-col :span="12">
+				<el-form-item label="密码" prop="name" required>
+					<el-input v-model="ruleForm.name" placeholder="默认密码"></el-input>
+				</el-form-item>
+			</el-col>
+			<el-col :span="12">
+				<el-form-item label="公司名字" prop="name" required>
+					<el-input v-model="ruleForm.name"></el-input>
+				</el-form-item>
+			</el-col>
+			<el-col :span="12">
+				<el-form-item label="简称" prop="name" required>
+					<el-input v-model="ruleForm.name"></el-input>
+				</el-form-item>
+			</el-col>
+			<el-col :span="12">
+				<el-form-item label="类型" prop="region" required>
+					<el-select v-model="ruleForm.region" placeholder="请选择活动区域">
+						<el-option label="区域一" value="shanghai"></el-option>
+						<el-option label="区域二" value="beijing"></el-option>
+					</el-select>
+				</el-form-item>
+			</el-col>
+			<el-col :span="12">
+				<el-form-item label="绑定手机" prop="phone">
+					<el-input v-model="ruleForm.phone"></el-input>
+				</el-form-item>
+			</el-col>
+			<el-col :span="12">
+				<el-form-item label="APPID" prop="phone">
+					<el-input v-model="ruleForm.phone"></el-input>
+				</el-form-item>
+			</el-col>
+			<el-col :span="12">
+
+				<el-form-item prop="date1" label="有效期" required>
+					<el-date-picker type="date" placeholder="选择日期" v-model="ruleForm.date1" style="width: 100%;"></el-date-picker>
+				</el-form-item>
+			</el-col>
+			<el-col :span="12">
+				<el-form-item prop="date1" label="最后更新">
+					<el-date-picker type="date" placeholder="选择日期" v-model="ruleForm.date1" style="width: 100%;"></el-date-picker>
+				</el-form-item>
+			</el-col>
+			<el-col :span="12">
+				<el-form-item prop="date1" label="最后更新">
+					<el-date-picker type="date" placeholder="选择日期" v-model="ruleForm.date1" style="width: 100%;"></el-date-picker>
+				</el-form-item>
+			</el-col>
+			<el-form-item label="状态" prop="status">
+				<el-radio-group v-model="ruleForm.status">
+					<el-radio label="可用"></el-radio>
+					<el-radio label="冻结"></el-radio>
+					<el-radio label="停用"></el-radio>
+				</el-radio-group>
+			</el-form-item>
+			<el-form-item label="描述" prop="desc">
+				<el-input type="textarea" v-model="ruleForm.desc"></el-input>
+			</el-form-item>
+			<el-form-item>
+				<el-button type="primary" @click="submitForm('ruleForm')">立即保存</el-button>
+				<el-button @click="resetForm('ruleForm')">返回</el-button>
+			</el-form-item>
+		</el-form>
+	</el-main>
+
+</el-container>
