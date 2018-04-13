@@ -1,0 +1,66 @@
+<el-container>
+	<el-header class="main-header">
+		<h1 class="page-title">用户管理</h1>
+	</el-header>
+	<div class="toolbar">
+		<div class="toolbar-left">
+			<el-button type="primary">新增</el-button>
+			<el-button type="danger">删除</el-button>
+		</div>
+		<div class="toolbar-right">
+			<el-button>刷新</el-button>
+		</div>
+	</div>
+
+	<el-main class="main">
+		<div class="filter">
+			<el-form :inline="true" :model="userFilter" class="demo-form-inline">
+				<el-form-item label="昵称">
+					<el-input v-model="userFilter.user" placeholder="昵称"></el-input>
+				</el-form-item>
+				<el-form-item label="状态">
+					<el-select v-model="userFilter.status" placeholder="状态">
+						<el-option label="可用" value="shanghai"></el-option>
+						<el-option label="停用" value="beijing"></el-option>
+					</el-select>
+				</el-form-item>
+				<el-form-item>
+					<el-button type="primary" @click="onSubmit">查询</el-button>
+				</el-form-item>
+			</el-form>
+		</div>
+		<div class="main-table">
+
+			<el-table ref="multipleTable" :data="userData" tooltip-effect="dark" style="width: 100%" @selection-change="handleSelectionChange">
+				<el-table-column type="selection" width="55">
+				</el-table-column>
+				<el-table-column fixed prop="username" label="#" width="">
+				</el-table-column>
+				<el-table-column fixed prop="nickname" label="昵称" width="">
+				</el-table-column>
+				<el-table-column fixed prop="phone" label="电话" width="">
+				</el-table-column>
+				<el-table-column fixed prop="desc" label="描述" width="">
+				</el-table-column>
+				<el-table-column fixed prop="loginTime" label="最后登陆" width="">
+				</el-table-column>
+				<el-table-column fixed="right" label="操作" width="100">
+					<template slot-scope="scope">
+						<el-button @click="handleClick(scope.row)" type="text" size="small">查看</el-button>
+						<el-button type="text" size="small">编辑</el-button>
+					</template>
+				</el-table-column>
+
+			</el-table>
+		</div>
+		<div class="pagination">
+			<el-pagination background layout="prev, pager, next" :total="1000">
+			</el-pagination>
+		</div>
+	</el-main>
+
+	<!--<el-footer class="main-footer">
+						
+					</el-footer>-->
+
+</el-container>

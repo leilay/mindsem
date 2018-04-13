@@ -1,0 +1,62 @@
+/*====================
+ * 外框布局
+ ====================*/
+
+html,
+body,
+#app,
+.main-container {
+	height: 100%;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: lighter;
+}
+
+.main-aside {
+	background-color: rgb(84, 92, 100);
+}
+
+.brand {
+	color: rgb(255, 208, 75);
+	text-align: center;
+	font-size: 36px;
+	font-weight: lighter;
+}
+
+.main-header {
+	border-bottom: 1px solid #eee;
+}
+
+.page-title {
+	text-align: center;
+}
+
+.toolbar,
+.pagination {
+	display: flex;
+	align-content: space-between;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.main-footer {
+	border-top: 1px solid #eee;
+}
+/*====================
+ * 重写ele
+ ====================*/
+
+
+/*重写menu样式*/
+
+.el-menu {
+	border-right: 0;
+	;
+}
